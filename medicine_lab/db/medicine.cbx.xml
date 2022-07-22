@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="medicine">
+		<CBX_INST_ENTRY INSTANCE_NAME="|total1|medicine:inst8|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_rnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|total1|medicine:inst8|lpm_add_sub:Add2" CBX_FILE_NAME="add_sub_rnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|total1|medicine:inst8|lpm_add_sub:Add4" CBX_FILE_NAME="add_sub_6ph.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|total1|medicine:inst8|lpm_add_sub:Add6" CBX_FILE_NAME="add_sub_6ph.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|total1|divider:inst|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_8ph.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|total1|medicine:inst8|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_rnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|total1|medicine:inst8|lpm_add_sub:Add3" CBX_FILE_NAME="add_sub_rnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|total1|medicine:inst8|lpm_add_sub:Add5" CBX_FILE_NAME="add_sub_6ph.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,7 @@
+Running: xsim.dir/medicine_behav/xsimk.exe -simmode gui -wdb medicine_behav.wdb -simrunnum 0 -socket 60722
+Design successfully loaded
+Design Loading Memory Usage: 7276 KB (Peak: 7276 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 16160 KB (Peak: 16160 KB)
+Simulation CPU Usage: 210500 ms

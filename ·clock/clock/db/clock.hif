@@ -1,0 +1,343 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+7
+3331
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+display
+# storage
+db|clock.(6).cnf
+db|clock.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|display|display.vhd
+11adbceab9919282ec656925deb46c2d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(pin)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(pout)
+6 downto 0
+PARAMETER_STRING
+USR
+}
+# lmf
+..|..|..|..|..|..|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+count_60
+# storage
+db|clock.(2).cnf
+db|clock.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|count_60|count_60.vhd
+66836cbd5f14643b9a848d3fa6b694
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q0)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(q1)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# lmf
+..|..|..|..|..|..|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+count_24
+# storage
+db|clock.(3).cnf
+db|clock.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|count_24|count_24.vhd
+d88d7bc61101f1bd7b92b939ad4cc3c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q0)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(q1)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# lmf
+..|..|..|..|..|..|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ring_bell
+# storage
+db|clock.(5).cnf
+db|clock.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|ring_bell|ring_bell.vhd
+73412189233557a4fa2a428e4e22f15
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(min0)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(min1)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sec0)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sec1)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# lmf
+..|..|..|..|..|..|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+clock
+# storage
+db|clock.(0).cnf
+db|clock.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+clock.vhd
+dcff98d549693ca81b16814a41dc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|..|..|..|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+two_four_trans
+# storage
+db|clock.(4).cnf
+db|clock.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|two_four_trans|two_four_trans.vhd
+e0d33bb51ad3a78caa473f24437e84a4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(d)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(s)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# lmf
+..|..|..|..|..|..|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+judge_seven
+# storage
+db|clock.(7).cnf
+db|clock.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|judge_seven|judge_seven.vhd
+23f3c583a9b0833662bfd61daf35a0ab
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(pin)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(pout)
+6 downto 0
+PARAMETER_STRING
+USR
+}
+# lmf
+..|..|..|..|..|..|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+judge
+# storage
+db|clock.(8).cnf
+db|clock.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|judge|judge.vhd
+a04fdf21e7ae8e9c030e048f55a20e0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(pin)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(pout)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# lmf
+..|..|..|..|..|..|quartusii|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

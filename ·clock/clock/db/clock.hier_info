@@ -1,0 +1,303 @@
+|clock
+clk => divide:u1.clk
+clr => count_24:u4.clr
+clr => count_60:u3.clr
+clr => count_60:u2.clr
+qd => count_24:u4.qd
+qd => count_60:u3.qd
+qd => count_60:u2.qd
+en => two_four_trans:u5.en
+d[0] => two_four_trans:u5.d[0]
+d[1] => two_four_trans:u5.d[1]
+ring <= ring_bell:u6.ring
+ledout1[0] <= judge_seven:u8.pout[0]
+ledout1[1] <= judge_seven:u8.pout[1]
+ledout1[2] <= judge_seven:u8.pout[2]
+ledout1[3] <= judge_seven:u8.pout[3]
+ledout1[4] <= judge_seven:u8.pout[4]
+ledout1[5] <= judge_seven:u8.pout[5]
+ledout1[6] <= judge_seven:u8.pout[6]
+ledout2[0] <= judge:u9.pout[0]
+ledout2[1] <= judge:u9.pout[1]
+ledout2[2] <= judge:u9.pout[2]
+ledout2[3] <= judge:u9.pout[3]
+ledout2[4] <= judge:u10.pout[0]
+ledout2[5] <= judge:u10.pout[1]
+ledout2[6] <= judge:u10.pout[2]
+ledout2[7] <= judge:u10.pout[3]
+ledout2[8] <= judge:u11.pout[0]
+ledout2[9] <= judge:u11.pout[1]
+ledout2[10] <= judge:u11.pout[2]
+ledout2[11] <= judge:u11.pout[3]
+ledout2[12] <= judge:u12.pout[0]
+ledout2[13] <= judge:u12.pout[1]
+ledout2[14] <= judge:u12.pout[2]
+ledout2[15] <= judge:u12.pout[3]
+ledout2[16] <= judge:u13.pout[0]
+ledout2[17] <= judge:u13.pout[1]
+ledout2[18] <= judge:u13.pout[2]
+ledout2[19] <= judge:u13.pout[3]
+setled <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|divide:u1
+clk => temp[9].CLK
+clk => temp[8].CLK
+clk => temp[7].CLK
+clk => temp[6].CLK
+clk => temp[5].CLK
+clk => temp[4].CLK
+clk => temp[3].CLK
+clk => temp[2].CLK
+clk => temp[1].CLK
+clk => temp[0].CLK
+clk => cp~reg0.CLK
+cp <= cp~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|count_60:u2
+clk => m_clk.DATAA
+clr => num0[3].ACLR
+clr => num0[2].ACLR
+clr => num0[1].ACLR
+clr => num0[0].ACLR
+clr => num1[3].ACLR
+clr => num1[2].ACLR
+clr => num1[1].ACLR
+clr => num1[0].ACLR
+change => process_1~1.IN0
+change => m_clk.OUTPUTSELECT
+qd => m_clk.DATAB
+q0[0] <= num0[0].DB_MAX_OUTPUT_PORT_TYPE
+q0[1] <= num0[1].DB_MAX_OUTPUT_PORT_TYPE
+q0[2] <= num0[2].DB_MAX_OUTPUT_PORT_TYPE
+q0[3] <= num0[3].DB_MAX_OUTPUT_PORT_TYPE
+q1[0] <= num1[0].DB_MAX_OUTPUT_PORT_TYPE
+q1[1] <= num1[1].DB_MAX_OUTPUT_PORT_TYPE
+q1[2] <= num1[2].DB_MAX_OUTPUT_PORT_TYPE
+q1[3] <= num1[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|count_60:u3
+clk => m_clk.DATAA
+clr => num0[3].ACLR
+clr => num0[2].ACLR
+clr => num0[1].ACLR
+clr => num0[0].ACLR
+clr => num1[3].ACLR
+clr => num1[2].ACLR
+clr => num1[1].ACLR
+clr => num1[0].ACLR
+change => process_1~1.IN0
+change => m_clk.OUTPUTSELECT
+qd => m_clk.DATAB
+q0[0] <= num0[0].DB_MAX_OUTPUT_PORT_TYPE
+q0[1] <= num0[1].DB_MAX_OUTPUT_PORT_TYPE
+q0[2] <= num0[2].DB_MAX_OUTPUT_PORT_TYPE
+q0[3] <= num0[3].DB_MAX_OUTPUT_PORT_TYPE
+q1[0] <= num1[0].DB_MAX_OUTPUT_PORT_TYPE
+q1[1] <= num1[1].DB_MAX_OUTPUT_PORT_TYPE
+q1[2] <= num1[2].DB_MAX_OUTPUT_PORT_TYPE
+q1[3] <= num1[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|count_24:u4
+clk => m_clk.DATAA
+clr => num0[3].ACLR
+clr => num0[2].ACLR
+clr => num0[1].ACLR
+clr => num0[0].ACLR
+clr => num1[3].ACLR
+clr => num1[2].ACLR
+clr => num1[1].ACLR
+clr => num1[0].ACLR
+change => process_1~0.IN1
+change => m_clk.OUTPUTSELECT
+qd => m_clk.DATAB
+q0[0] <= num0[0].DB_MAX_OUTPUT_PORT_TYPE
+q0[1] <= num0[1].DB_MAX_OUTPUT_PORT_TYPE
+q0[2] <= num0[2].DB_MAX_OUTPUT_PORT_TYPE
+q0[3] <= num0[3].DB_MAX_OUTPUT_PORT_TYPE
+q1[0] <= num1[0].DB_MAX_OUTPUT_PORT_TYPE
+q1[1] <= num1[1].DB_MAX_OUTPUT_PORT_TYPE
+q1[2] <= num1[2].DB_MAX_OUTPUT_PORT_TYPE
+q1[3] <= num1[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|two_four_trans:u5
+en => temp~2.OUTPUTSELECT
+en => temp~1.OUTPUTSELECT
+en => temp~0.OUTPUTSELECT
+d[0] => Mux2.IN5
+d[0] => Mux1.IN5
+d[0] => Mux0.IN5
+d[1] => Mux2.IN4
+d[1] => Mux1.IN4
+d[1] => Mux0.IN4
+s[0] <= temp~2.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= temp~1.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= temp~0.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= <VCC>
+
+
+|clock|ring_bell:u6
+min0[0] => Equal1.IN7
+min0[1] => Equal1.IN6
+min0[2] => Equal1.IN5
+min0[3] => Equal1.IN4
+min1[0] => Equal0.IN7
+min1[1] => Equal0.IN6
+min1[2] => Equal0.IN5
+min1[3] => Equal0.IN4
+sec0[0] => Equal7.IN7
+sec0[0] => Equal6.IN7
+sec0[0] => Equal5.IN7
+sec0[0] => Equal4.IN7
+sec0[0] => Equal3.IN7
+sec0[1] => Equal7.IN6
+sec0[1] => Equal6.IN6
+sec0[1] => Equal5.IN6
+sec0[1] => Equal4.IN6
+sec0[1] => Equal3.IN6
+sec0[2] => Equal7.IN5
+sec0[2] => Equal6.IN5
+sec0[2] => Equal5.IN5
+sec0[2] => Equal4.IN5
+sec0[2] => Equal3.IN5
+sec0[3] => Equal7.IN4
+sec0[3] => Equal6.IN4
+sec0[3] => Equal5.IN4
+sec0[3] => Equal4.IN4
+sec0[3] => Equal3.IN4
+sec1[0] => Equal2.IN7
+sec1[1] => Equal2.IN6
+sec1[2] => Equal2.IN5
+sec1[3] => Equal2.IN4
+ring <= ring~6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|display:u7
+pin[0] => Mux6.IN19
+pin[0] => Mux5.IN19
+pin[0] => Mux4.IN19
+pin[0] => Mux3.IN19
+pin[0] => Mux2.IN19
+pin[0] => Mux1.IN19
+pin[0] => Mux0.IN19
+pin[1] => Mux6.IN18
+pin[1] => Mux5.IN18
+pin[1] => Mux4.IN18
+pin[1] => Mux3.IN18
+pin[1] => Mux2.IN18
+pin[1] => Mux1.IN18
+pin[1] => Mux0.IN18
+pin[2] => Mux6.IN17
+pin[2] => Mux5.IN17
+pin[2] => Mux4.IN17
+pin[2] => Mux3.IN17
+pin[2] => Mux2.IN17
+pin[2] => Mux1.IN17
+pin[2] => Mux0.IN17
+pin[3] => Mux6.IN16
+pin[3] => Mux5.IN16
+pin[3] => Mux4.IN16
+pin[3] => Mux3.IN16
+pin[3] => Mux2.IN16
+pin[3] => Mux1.IN16
+pin[3] => Mux0.IN16
+pout[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+pout[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+pout[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+pout[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+pout[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+pout[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+pout[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|judge_seven:u8
+clk => count.CLK
+change => temp[6]~6.IN1
+pin[0] => temp[0]~0.DATAIN
+pin[1] => temp[1]~1.DATAIN
+pin[2] => temp[2]~2.DATAIN
+pin[3] => temp[3]~3.DATAIN
+pin[4] => temp[4]~4.DATAIN
+pin[5] => temp[5]~5.DATAIN
+pin[6] => temp[6]~7.DATAIN
+pout[0] <= temp[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+pout[1] <= temp[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+pout[2] <= temp[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+pout[3] <= temp[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+pout[4] <= temp[4]~4.DB_MAX_OUTPUT_PORT_TYPE
+pout[5] <= temp[5]~5.DB_MAX_OUTPUT_PORT_TYPE
+pout[6] <= temp[6]~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|judge:u9
+clk => count.CLK
+change => temp[3]~3.IN1
+pin[0] => temp[0]~0.DATAIN
+pin[1] => temp[1]~1.DATAIN
+pin[2] => temp[2]~2.DATAIN
+pin[3] => temp[3]~4.DATAIN
+pout[0] <= temp[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+pout[1] <= temp[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+pout[2] <= temp[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+pout[3] <= temp[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|judge:u10
+clk => count.CLK
+change => temp[3]~3.IN1
+pin[0] => temp[0]~0.DATAIN
+pin[1] => temp[1]~1.DATAIN
+pin[2] => temp[2]~2.DATAIN
+pin[3] => temp[3]~4.DATAIN
+pout[0] <= temp[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+pout[1] <= temp[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+pout[2] <= temp[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+pout[3] <= temp[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|judge:u11
+clk => count.CLK
+change => temp[3]~3.IN1
+pin[0] => temp[0]~0.DATAIN
+pin[1] => temp[1]~1.DATAIN
+pin[2] => temp[2]~2.DATAIN
+pin[3] => temp[3]~4.DATAIN
+pout[0] <= temp[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+pout[1] <= temp[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+pout[2] <= temp[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+pout[3] <= temp[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|judge:u12
+clk => count.CLK
+change => temp[3]~3.IN1
+pin[0] => temp[0]~0.DATAIN
+pin[1] => temp[1]~1.DATAIN
+pin[2] => temp[2]~2.DATAIN
+pin[3] => temp[3]~4.DATAIN
+pout[0] <= temp[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+pout[1] <= temp[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+pout[2] <= temp[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+pout[3] <= temp[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock|judge:u13
+clk => count.CLK
+change => temp[3]~3.IN1
+pin[0] => temp[0]~0.DATAIN
+pin[1] => temp[1]~1.DATAIN
+pin[2] => temp[2]~2.DATAIN
+pin[3] => temp[3]~4.DATAIN
+pout[0] <= temp[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+pout[1] <= temp[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+pout[2] <= temp[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+pout[3] <= temp[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+
+

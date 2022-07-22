@@ -1,0 +1,156 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.019 ns
+From           : en
+To             : count_60:u2|cout
+From Clock     : --
+To Clock       : d[1]
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.917 ns
+From           : count_24:u4|num1[0]
+To             : ledout2[16]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.882 ns
+From           : en
+To             : ledout2[2]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.914 ns
+From           : d[1]
+To             : count_60:u3|cout
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'en'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 182.85 MHz ( period = 5.469 ns )
+From           : count_60:u3|num0[3]
+To             : count_60:u3|cout
+From Clock     : en
+To Clock       : en
+Failed Paths   : 0
+
+Type           : Clock Setup: 'd[0]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 182.88 MHz ( period = 5.468 ns )
+From           : count_60:u3|num0[3]
+To             : count_60:u3|cout
+From Clock     : d[0]
+To Clock       : d[0]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'd[1]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 182.92 MHz ( period = 5.467 ns )
+From           : count_60:u3|num0[3]
+To             : count_60:u3|cout
+From Clock     : d[1]
+To Clock       : d[1]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'qd'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 194.25 MHz ( period = 5.148 ns )
+From           : count_60:u3|num0[3]
+To             : count_60:u3|cout
+From Clock     : qd
+To Clock       : qd
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 246.18 MHz ( period = 4.062 ns )
+From           : count_60:u3|num0[3]
+To             : count_60:u3|cout
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'd[0]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : count_24:u4|num0[2]
+To             : count_24:u4|num0[2]
+From Clock     : d[0]
+To Clock       : d[0]
+Failed Paths   : 107
+
+Type           : Clock Hold: 'd[1]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : count_24:u4|num0[2]
+To             : count_24:u4|num0[2]
+From Clock     : d[1]
+To Clock       : d[1]
+Failed Paths   : 107
+
+Type           : Clock Hold: 'en'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : count_24:u4|num0[2]
+To             : count_24:u4|num0[2]
+From Clock     : en
+To Clock       : en
+Failed Paths   : 107
+
+Type           : Clock Hold: 'qd'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : count_24:u4|num0[2]
+To             : count_24:u4|num0[2]
+From Clock     : qd
+To Clock       : qd
+Failed Paths   : 100
+
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : divide:u1|temp[4]
+To             : divide:u1|cp
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 2
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 423
+
+--------------------------------------------------------------------------------------
+

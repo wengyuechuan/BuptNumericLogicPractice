@@ -1,0 +1,776 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xa7a100tfgg484-1I",
+      "name": "total",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {
+      "display_0": "",
+      "blink_0": "",
+      "output_trans_0": "",
+      "two_four_trans_0": "",
+      "count_60_1": "",
+      "count_60_0": "",
+      "blink_5": "",
+      "ring_bell_0": "",
+      "blink_4": "",
+      "count_24_0": "",
+      "blink_3": "",
+      "blink_2": "",
+      "blink_1": "",
+      "alarm_0": "",
+      "MyorGate_0": "",
+      "divide_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "en": {
+        "direction": "I"
+      },
+      "d": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "clr": {
+        "direction": "I"
+      },
+      "qd": {
+        "direction": "I"
+      },
+      "enout0": {
+        "direction": "O"
+      },
+      "enout1": {
+        "direction": "O"
+      },
+      "enout2": {
+        "direction": "O"
+      },
+      "enout3": {
+        "direction": "O"
+      },
+      "enout4": {
+        "direction": "O"
+      },
+      "enout5": {
+        "direction": "O"
+      },
+      "pout": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "minuteset": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "hourset": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "ring": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "display_0": {
+        "vlnv": "xilinx.com:module_ref:display:1.0",
+        "xci_name": "total_display_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "display",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "pin": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "pout": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "blink_0": {
+        "vlnv": "xilinx.com:module_ref:blink:1.0",
+        "xci_name": "total_blink_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "blink",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "change": {
+            "direction": "I"
+          },
+          "enout": {
+            "direction": "O"
+          }
+        }
+      },
+      "output_trans_0": {
+        "vlnv": "xilinx.com:module_ref:output_trans:1.0",
+        "xci_name": "total_output_trans_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "output_trans",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_s": {
+            "direction": "I"
+          },
+          "second0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "second1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "minute0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "minute1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "hour0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "hour1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "ledout": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "en": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          }
+        }
+      },
+      "two_four_trans_0": {
+        "vlnv": "xilinx.com:module_ref:two_four_trans:1.0",
+        "xci_name": "total_two_four_trans_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "two_four_trans",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "en": {
+            "direction": "I"
+          },
+          "d": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "s": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "count_60_1": {
+        "vlnv": "xilinx.com:module_ref:count_60:1.0",
+        "xci_name": "total_count_60_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "count_60",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I"
+          },
+          "change": {
+            "direction": "I"
+          },
+          "qd": {
+            "direction": "I"
+          },
+          "q0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "q1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "count_60_0": {
+        "vlnv": "xilinx.com:module_ref:count_60:1.0",
+        "xci_name": "total_count_60_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "count_60",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I"
+          },
+          "change": {
+            "direction": "I"
+          },
+          "qd": {
+            "direction": "I"
+          },
+          "q0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "q1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "blink_5": {
+        "vlnv": "xilinx.com:module_ref:blink:1.0",
+        "xci_name": "total_blink_5_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "blink",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "change": {
+            "direction": "I"
+          },
+          "enout": {
+            "direction": "O"
+          }
+        }
+      },
+      "ring_bell_0": {
+        "vlnv": "xilinx.com:module_ref:ring_bell:1.0",
+        "xci_name": "total_ring_bell_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ring_bell",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "min0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "min1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "sec0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "sec1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "ring": {
+            "direction": "O"
+          }
+        }
+      },
+      "blink_4": {
+        "vlnv": "xilinx.com:module_ref:blink:1.0",
+        "xci_name": "total_blink_4_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "blink",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "change": {
+            "direction": "I"
+          },
+          "enout": {
+            "direction": "O"
+          }
+        }
+      },
+      "count_24_0": {
+        "vlnv": "xilinx.com:module_ref:count_24:1.0",
+        "xci_name": "total_count_24_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "count_24",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I"
+          },
+          "change": {
+            "direction": "I"
+          },
+          "qd": {
+            "direction": "I"
+          },
+          "q0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "q1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "blink_3": {
+        "vlnv": "xilinx.com:module_ref:blink:1.0",
+        "xci_name": "total_blink_3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "blink",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "change": {
+            "direction": "I"
+          },
+          "enout": {
+            "direction": "O"
+          }
+        }
+      },
+      "blink_2": {
+        "vlnv": "xilinx.com:module_ref:blink:1.0",
+        "xci_name": "total_blink_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "blink",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "change": {
+            "direction": "I"
+          },
+          "enout": {
+            "direction": "O"
+          }
+        }
+      },
+      "blink_1": {
+        "vlnv": "xilinx.com:module_ref:blink:1.0",
+        "xci_name": "total_blink_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "blink",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "change": {
+            "direction": "I"
+          },
+          "enout": {
+            "direction": "O"
+          }
+        }
+      },
+      "alarm_0": {
+        "vlnv": "xilinx.com:module_ref:alarm:1.0",
+        "xci_name": "total_alarm_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "alarm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "minuteset": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "hourset": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "minute0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "minute1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "hour0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "hour1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "second0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "second1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "ifRing": {
+            "direction": "O"
+          }
+        }
+      },
+      "MyorGate_0": {
+        "vlnv": "xilinx.com:module_ref:MyorGate:1.0",
+        "xci_name": "total_MyorGate_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "MyorGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c": {
+            "direction": "O"
+          }
+        }
+      },
+      "divide_0": {
+        "vlnv": "xilinx.com:module_ref:divide:1.0",
+        "xci_name": "total_divide_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "divide",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "cp": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "count_60_0_cout": {
+        "ports": [
+          "count_60_0/cout",
+          "count_60_1/clk"
+        ]
+      },
+      "two_four_trans_0_s": {
+        "ports": [
+          "two_four_trans_0/s",
+          "count_60_0/change",
+          "count_60_1/change",
+          "count_24_0/change",
+          "blink_0/change",
+          "blink_1/change",
+          "blink_2/change",
+          "blink_3/change",
+          "blink_4/change",
+          "blink_5/change"
+        ]
+      },
+      "divide_0_cp": {
+        "ports": [
+          "divide_0/cp",
+          "count_60_0/clk",
+          "blink_0/clk",
+          "blink_1/clk",
+          "blink_2/clk",
+          "blink_3/clk",
+          "blink_4/clk",
+          "blink_5/clk",
+          "output_trans_0/clk_s"
+        ]
+      },
+      "output_trans_0_en": {
+        "ports": [
+          "output_trans_0/en",
+          "blink_0/en",
+          "blink_1/en",
+          "blink_2/en",
+          "blink_3/en",
+          "blink_4/en",
+          "blink_5/en"
+        ]
+      },
+      "count_24_0_q1": {
+        "ports": [
+          "count_24_0/q1",
+          "output_trans_0/hour1",
+          "alarm_0/hour1"
+        ]
+      },
+      "count_60_1_q1": {
+        "ports": [
+          "count_60_1/q1",
+          "ring_bell_0/min1",
+          "output_trans_0/minute1",
+          "alarm_0/minute1"
+        ]
+      },
+      "count_60_1_cout": {
+        "ports": [
+          "count_60_1/cout",
+          "count_24_0/clk"
+        ]
+      },
+      "count_24_0_q0": {
+        "ports": [
+          "count_24_0/q0",
+          "output_trans_0/hour0",
+          "alarm_0/hour0"
+        ]
+      },
+      "count_60_1_q0": {
+        "ports": [
+          "count_60_1/q0",
+          "ring_bell_0/min0",
+          "output_trans_0/minute0",
+          "alarm_0/minute0"
+        ]
+      },
+      "output_trans_0_ledout": {
+        "ports": [
+          "output_trans_0/ledout",
+          "display_0/pin"
+        ]
+      },
+      "count_60_0_q1": {
+        "ports": [
+          "count_60_0/q1",
+          "ring_bell_0/sec1",
+          "output_trans_0/second1",
+          "alarm_0/second1"
+        ]
+      },
+      "count_60_0_q0": {
+        "ports": [
+          "count_60_0/q0",
+          "ring_bell_0/sec0",
+          "output_trans_0/second0",
+          "alarm_0/second0"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "divide_0/clk"
+        ]
+      },
+      "en_1": {
+        "ports": [
+          "en",
+          "two_four_trans_0/en"
+        ]
+      },
+      "d_1": {
+        "ports": [
+          "d",
+          "two_four_trans_0/d"
+        ]
+      },
+      "clr_1": {
+        "ports": [
+          "clr",
+          "count_60_0/clr",
+          "count_60_1/clr",
+          "count_24_0/clr"
+        ]
+      },
+      "qd_1": {
+        "ports": [
+          "qd",
+          "count_60_0/qd",
+          "count_24_0/qd",
+          "count_60_1/qd"
+        ]
+      },
+      "blink_0_enout": {
+        "ports": [
+          "blink_0/enout",
+          "enout0"
+        ]
+      },
+      "blink_1_enout": {
+        "ports": [
+          "blink_1/enout",
+          "enout1"
+        ]
+      },
+      "blink_2_enout": {
+        "ports": [
+          "blink_2/enout",
+          "enout2"
+        ]
+      },
+      "blink_3_enout": {
+        "ports": [
+          "blink_3/enout",
+          "enout3"
+        ]
+      },
+      "blink_4_enout": {
+        "ports": [
+          "blink_4/enout",
+          "enout4"
+        ]
+      },
+      "blink_5_enout": {
+        "ports": [
+          "blink_5/enout",
+          "enout5"
+        ]
+      },
+      "display_0_pout": {
+        "ports": [
+          "display_0/pout",
+          "pout"
+        ]
+      },
+      "ring_bell_0_ring": {
+        "ports": [
+          "ring_bell_0/ring",
+          "MyorGate_0/a"
+        ]
+      },
+      "alarm_0_ifRing": {
+        "ports": [
+          "alarm_0/ifRing",
+          "MyorGate_0/b"
+        ]
+      },
+      "minuteset_1": {
+        "ports": [
+          "minuteset",
+          "alarm_0/minuteset"
+        ]
+      },
+      "hourset_1": {
+        "ports": [
+          "hourset",
+          "alarm_0/hourset"
+        ]
+      },
+      "MyorGate_0_c": {
+        "ports": [
+          "MyorGate_0/c",
+          "ring"
+        ]
+      }
+    }
+  }
+}

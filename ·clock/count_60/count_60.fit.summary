@@ -1,0 +1,11 @@
+Fitter Status : Successful - Mon Apr 11 20:36:34 2022
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : count_60
+Top-level Entity Name : count_60
+Family : ACEX1K
+Device : EP1K10TC100-1
+Timing Models : Final
+Total logic elements : 14 / 576 ( 2 % )
+Total pins : 13 / 66 ( 20 % )
+Total memory bits : 0 / 12,288 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )

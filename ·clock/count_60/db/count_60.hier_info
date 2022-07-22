@@ -1,0 +1,24 @@
+|count_60
+clk => m_clk.DATAA
+clr => num0[3].ACLR
+clr => num0[2].ACLR
+clr => num0[1].ACLR
+clr => num0[0].ACLR
+clr => num1[3].ACLR
+clr => num1[2].ACLR
+clr => num1[1].ACLR
+clr => num1[0].ACLR
+change => cout~1.IN0
+change => m_clk.OUTPUTSELECT
+qd => m_clk.DATAB
+q0[0] <= num0[0].DB_MAX_OUTPUT_PORT_TYPE
+q0[1] <= num0[1].DB_MAX_OUTPUT_PORT_TYPE
+q0[2] <= num0[2].DB_MAX_OUTPUT_PORT_TYPE
+q0[3] <= num0[3].DB_MAX_OUTPUT_PORT_TYPE
+q1[0] <= num1[0].DB_MAX_OUTPUT_PORT_TYPE
+q1[1] <= num1[1].DB_MAX_OUTPUT_PORT_TYPE
+q1[2] <= num1[2].DB_MAX_OUTPUT_PORT_TYPE
+q1[3] <= num1[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

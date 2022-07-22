@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="total_vhd_tst_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="total_vhd_tst" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="20000000000000001fs"></ZoomEndTime>
+      <Cursor1Time time="20000000000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/total_vhd_tst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_vhd_tst/cur_bot" type="array">
+      <obj_property name="ElementShortName">cur_bot[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_bot[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_vhd_tst/cur_pill" type="array">
+      <obj_property name="ElementShortName">cur_pill[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_pill[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_vhd_tst/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_vhd_tst/max_bottle" type="array">
+      <obj_property name="ElementShortName">max_bottle[7:0]</obj_property>
+      <obj_property name="ObjectShortName">max_bottle[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_vhd_tst/pnpb" type="array">
+      <obj_property name="ElementShortName">pnpb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pnpb[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_vhd_tst/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_vhd_tst/stop_light" type="logic">
+      <obj_property name="ElementShortName">stop_light</obj_property>
+      <obj_property name="ObjectShortName">stop_light</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_vhd_tst/warn_light" type="logic">
+      <obj_property name="ElementShortName">warn_light</obj_property>
+      <obj_property name="ObjectShortName">warn_light</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_vhd_tst/work_light" type="logic">
+      <obj_property name="ElementShortName">work_light</obj_property>
+      <obj_property name="ObjectShortName">work_light</obj_property>
+   </wvobject>
+   <wvobject fp_name="/total_vhd_tst/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,19 @@
+|two_four_trans
+en => temp[3].LATCH_ENABLE
+en => temp[2].LATCH_ENABLE
+en => temp[1].LATCH_ENABLE
+en => temp[0].LATCH_ENABLE
+d[0] => Mux3.IN5
+d[0] => Mux2.IN5
+d[0] => Mux1.IN5
+d[0] => Mux0.IN5
+d[1] => Mux3.IN4
+d[1] => Mux2.IN4
+d[1] => Mux1.IN4
+d[1] => Mux0.IN4
+s[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

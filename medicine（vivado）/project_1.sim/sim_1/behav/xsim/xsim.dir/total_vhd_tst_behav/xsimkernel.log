@@ -1,0 +1,7 @@
+Running: xsim.dir/total_vhd_tst_behav/xsimk.exe -simmode gui -wdb total_vhd_tst_behav.wdb -simrunnum 0 -socket 62717
+Design successfully loaded
+Design Loading Memory Usage: 6592 KB (Peak: 6592 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 15304 KB (Peak: 15304 KB)
+Simulation CPU Usage: 296 ms

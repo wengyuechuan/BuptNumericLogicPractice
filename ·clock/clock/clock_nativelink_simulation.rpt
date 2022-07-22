@@ -1,0 +1,18 @@
+Info: Start Nativelink Simulation process
+Error : Can't open file -- D:/学习用文档/数字逻辑课程设计/最终项目/project1/project/divide/divide.vhd
+can not find channel named "couldn't open "D:/学习用文档/数字逻辑课程设计/最终项目/project1/project/divide/divide.vhd": no such file or directory"
+Error: NativeLink simulation flow was NOT successful
+
+
+
+================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
+Nativelink TCL script failed with errorCode:  NONE
+Nativelink TCL script failed with errorInfo:  can not find channel named "couldn't open "D:/学习用文档/数字逻辑课程设计/最终项目/project1/project/divide/divide.vhd": no such file or directory"
+    while executing
+"eof $file_id "
+    (procedure "get_ip_info" line 20)
+    invoked from within
+"get_ip_info $full_file_name"
+    (procedure "run_eda_simulation_tool" line 132)
+    invoked from within
+"run_eda_simulation_tool eda_opts_hash"

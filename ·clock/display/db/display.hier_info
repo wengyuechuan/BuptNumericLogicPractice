@@ -1,0 +1,38 @@
+|display
+pin[0] => Mux6.IN19
+pin[0] => Mux5.IN19
+pin[0] => Mux4.IN19
+pin[0] => Mux3.IN19
+pin[0] => Mux2.IN19
+pin[0] => Mux1.IN19
+pin[0] => Mux0.IN19
+pin[1] => Mux6.IN18
+pin[1] => Mux5.IN18
+pin[1] => Mux4.IN18
+pin[1] => Mux3.IN18
+pin[1] => Mux2.IN18
+pin[1] => Mux1.IN18
+pin[1] => Mux0.IN18
+pin[2] => Mux6.IN17
+pin[2] => Mux5.IN17
+pin[2] => Mux4.IN17
+pin[2] => Mux3.IN17
+pin[2] => Mux2.IN17
+pin[2] => Mux1.IN17
+pin[2] => Mux0.IN17
+pin[3] => Mux6.IN16
+pin[3] => Mux5.IN16
+pin[3] => Mux4.IN16
+pin[3] => Mux3.IN16
+pin[3] => Mux2.IN16
+pin[3] => Mux1.IN16
+pin[3] => Mux0.IN16
+pout[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+pout[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+pout[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+pout[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+pout[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+pout[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+pout[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

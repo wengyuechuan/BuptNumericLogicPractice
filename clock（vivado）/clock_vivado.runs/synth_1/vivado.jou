@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 13 17:03:59 2022
+# Process ID: 28592
+# Current directory: D:/vhdl/clock_vivado/clock_vivado.runs/synth_1
+# Command line: vivado.exe -log clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock.tcl
+# Log file: D:/vhdl/clock_vivado/clock_vivado.runs/synth_1/clock.vds
+# Journal file: D:/vhdl/clock_vivado/clock_vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source clock.tcl -notrace

@@ -1,0 +1,928 @@
+Simulator report for clock
+Mon May 30 14:49:44 2022
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1500.0 s     ;
+; Simulation Netlist Size     ; 665 nodes    ;
+; Simulation Coverage         ;      84.36 % ;
+; Total Number of Transitions ; 23030837     ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; End time                                                                                   ; 1500 s     ;               ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; clock.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      84.36 % ;
+; Total nodes checked                                 ; 665          ;
+; Total output ports checked                          ; 665          ;
+; Total output ports with complete 1/0-value coverage ; 561          ;
+; Total output ports with no 1/0-value coverage       ; 100          ;
+; Total output ports with no 1-value coverage         ; 100          ;
+; Total output ports with no 0-value coverage         ; 104          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                  ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                           ; Output Port Name                                                                    ; Output Port Type ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; |clock|clk                                                                          ; |clock|clk                                                                          ; out              ;
+; |clock|clr                                                                          ; |clock|clr                                                                          ; out              ;
+; |clock|qd                                                                           ; |clock|qd                                                                           ; out              ;
+; |clock|en                                                                           ; |clock|en                                                                           ; out              ;
+; |clock|d[0]                                                                         ; |clock|d[0]                                                                         ; out              ;
+; |clock|d[1]                                                                         ; |clock|d[1]                                                                         ; out              ;
+; |clock|ledout1[0]                                                                   ; |clock|ledout1[0]                                                                   ; pin_out          ;
+; |clock|ledout1[1]                                                                   ; |clock|ledout1[1]                                                                   ; pin_out          ;
+; |clock|ledout1[2]                                                                   ; |clock|ledout1[2]                                                                   ; pin_out          ;
+; |clock|ledout1[3]                                                                   ; |clock|ledout1[3]                                                                   ; pin_out          ;
+; |clock|ledout1[4]                                                                   ; |clock|ledout1[4]                                                                   ; pin_out          ;
+; |clock|ledout1[5]                                                                   ; |clock|ledout1[5]                                                                   ; pin_out          ;
+; |clock|ledout1[6]                                                                   ; |clock|ledout1[6]                                                                   ; pin_out          ;
+; |clock|ledout2[0]                                                                   ; |clock|ledout2[0]                                                                   ; pin_out          ;
+; |clock|ledout2[1]                                                                   ; |clock|ledout2[1]                                                                   ; pin_out          ;
+; |clock|ledout2[2]                                                                   ; |clock|ledout2[2]                                                                   ; pin_out          ;
+; |clock|ledout2[4]                                                                   ; |clock|ledout2[4]                                                                   ; pin_out          ;
+; |clock|ledout2[5]                                                                   ; |clock|ledout2[5]                                                                   ; pin_out          ;
+; |clock|ledout2[6]                                                                   ; |clock|ledout2[6]                                                                   ; pin_out          ;
+; |clock|ledout2[7]                                                                   ; |clock|ledout2[7]                                                                   ; pin_out          ;
+; |clock|ledout2[8]                                                                   ; |clock|ledout2[8]                                                                   ; pin_out          ;
+; |clock|ledout2[16]                                                                  ; |clock|ledout2[16]                                                                  ; pin_out          ;
+; |clock|ledout2[17]                                                                  ; |clock|ledout2[17]                                                                  ; pin_out          ;
+; |clock|setled                                                                       ; |clock|setled                                                                       ; pin_out          ;
+; |clock|ring_bell:u6|ring~2                                                          ; |clock|ring_bell:u6|ring~2                                                          ; out0             ;
+; |clock|ring_bell:u6|ring~3                                                          ; |clock|ring_bell:u6|ring~3                                                          ; out0             ;
+; |clock|ring_bell:u6|ring~4                                                          ; |clock|ring_bell:u6|ring~4                                                          ; out0             ;
+; |clock|ring_bell:u6|ring~5                                                          ; |clock|ring_bell:u6|ring~5                                                          ; out0             ;
+; |clock|two_four_trans:u5|s[2]                                                       ; |clock|two_four_trans:u5|s[2]                                                       ; out              ;
+; |clock|two_four_trans:u5|s[1]                                                       ; |clock|two_four_trans:u5|s[1]                                                       ; out              ;
+; |clock|two_four_trans:u5|s[0]                                                       ; |clock|two_four_trans:u5|s[0]                                                       ; out              ;
+; |clock|two_four_trans:u5|setled                                                     ; |clock|two_four_trans:u5|setled                                                     ; regout           ;
+; |clock|two_four_trans:u5|count                                                      ; |clock|two_four_trans:u5|count                                                      ; regout           ;
+; |clock|count_24:u4|m_clk                                                            ; |clock|count_24:u4|m_clk                                                            ; out              ;
+; |clock|count_24:u4|num0~1                                                           ; |clock|count_24:u4|num0~1                                                           ; out              ;
+; |clock|count_24:u4|num0~2                                                           ; |clock|count_24:u4|num0~2                                                           ; out              ;
+; |clock|count_24:u4|num0~3                                                           ; |clock|count_24:u4|num0~3                                                           ; out              ;
+; |clock|count_24:u4|num0~5                                                           ; |clock|count_24:u4|num0~5                                                           ; out              ;
+; |clock|count_24:u4|num0~6                                                           ; |clock|count_24:u4|num0~6                                                           ; out              ;
+; |clock|count_24:u4|num0~7                                                           ; |clock|count_24:u4|num0~7                                                           ; out              ;
+; |clock|count_24:u4|num0[1]                                                          ; |clock|count_24:u4|num0[1]                                                          ; regout           ;
+; |clock|count_24:u4|num0[0]                                                          ; |clock|count_24:u4|num0[0]                                                          ; regout           ;
+; |clock|count_60:u3|m_clk                                                            ; |clock|count_60:u3|m_clk                                                            ; out              ;
+; |clock|count_60:u3|num1[0]                                                          ; |clock|count_60:u3|num1[0]                                                          ; regout           ;
+; |clock|count_60:u3|num1~3                                                           ; |clock|count_60:u3|num1~3                                                           ; out              ;
+; |clock|count_60:u3|num0~0                                                           ; |clock|count_60:u3|num0~0                                                           ; out              ;
+; |clock|count_60:u3|num0~1                                                           ; |clock|count_60:u3|num0~1                                                           ; out              ;
+; |clock|count_60:u3|num0~2                                                           ; |clock|count_60:u3|num0~2                                                           ; out              ;
+; |clock|count_60:u3|num0~3                                                           ; |clock|count_60:u3|num0~3                                                           ; out              ;
+; |clock|count_60:u3|num0[3]                                                          ; |clock|count_60:u3|num0[3]                                                          ; regout           ;
+; |clock|count_60:u3|num0[2]                                                          ; |clock|count_60:u3|num0[2]                                                          ; regout           ;
+; |clock|count_60:u3|num0[1]                                                          ; |clock|count_60:u3|num0[1]                                                          ; regout           ;
+; |clock|count_60:u3|num0[0]                                                          ; |clock|count_60:u3|num0[0]                                                          ; regout           ;
+; |clock|count_60:u2|m_clk                                                            ; |clock|count_60:u2|m_clk                                                            ; out              ;
+; |clock|count_60:u2|process_1~0                                                      ; |clock|count_60:u2|process_1~0                                                      ; out0             ;
+; |clock|count_60:u2|process_1~1                                                      ; |clock|count_60:u2|process_1~1                                                      ; out0             ;
+; |clock|count_60:u2|num1[0]                                                          ; |clock|count_60:u2|num1[0]                                                          ; regout           ;
+; |clock|count_60:u2|num1~1                                                           ; |clock|count_60:u2|num1~1                                                           ; out              ;
+; |clock|count_60:u2|num1~2                                                           ; |clock|count_60:u2|num1~2                                                           ; out              ;
+; |clock|count_60:u2|num1~3                                                           ; |clock|count_60:u2|num1~3                                                           ; out              ;
+; |clock|count_60:u2|num0~0                                                           ; |clock|count_60:u2|num0~0                                                           ; out              ;
+; |clock|count_60:u2|num0~1                                                           ; |clock|count_60:u2|num0~1                                                           ; out              ;
+; |clock|count_60:u2|num0~2                                                           ; |clock|count_60:u2|num0~2                                                           ; out              ;
+; |clock|count_60:u2|num0~3                                                           ; |clock|count_60:u2|num0~3                                                           ; out              ;
+; |clock|count_60:u2|cout                                                             ; |clock|count_60:u2|cout                                                             ; regout           ;
+; |clock|count_60:u2|num0[3]                                                          ; |clock|count_60:u2|num0[3]                                                          ; regout           ;
+; |clock|count_60:u2|num0[2]                                                          ; |clock|count_60:u2|num0[2]                                                          ; regout           ;
+; |clock|count_60:u2|num0[1]                                                          ; |clock|count_60:u2|num0[1]                                                          ; regout           ;
+; |clock|count_60:u2|num0[0]                                                          ; |clock|count_60:u2|num0[0]                                                          ; regout           ;
+; |clock|count_60:u2|num1[2]                                                          ; |clock|count_60:u2|num1[2]                                                          ; regout           ;
+; |clock|count_60:u2|num1[1]                                                          ; |clock|count_60:u2|num1[1]                                                          ; regout           ;
+; |clock|divide:u1|temp[7]                                                            ; |clock|divide:u1|temp[7]                                                            ; regout           ;
+; |clock|divide:u1|temp[6]                                                            ; |clock|divide:u1|temp[6]                                                            ; regout           ;
+; |clock|divide:u1|temp[5]                                                            ; |clock|divide:u1|temp[5]                                                            ; regout           ;
+; |clock|divide:u1|temp[4]                                                            ; |clock|divide:u1|temp[4]                                                            ; regout           ;
+; |clock|divide:u1|temp[3]                                                            ; |clock|divide:u1|temp[3]                                                            ; regout           ;
+; |clock|divide:u1|temp[2]                                                            ; |clock|divide:u1|temp[2]                                                            ; regout           ;
+; |clock|divide:u1|temp[1]                                                            ; |clock|divide:u1|temp[1]                                                            ; regout           ;
+; |clock|divide:u1|cp                                                                 ; |clock|divide:u1|cp                                                                 ; regout           ;
+; |clock|divide:u1|temp~0                                                             ; |clock|divide:u1|temp~0                                                             ; out              ;
+; |clock|divide:u1|temp~1                                                             ; |clock|divide:u1|temp~1                                                             ; out              ;
+; |clock|divide:u1|temp~2                                                             ; |clock|divide:u1|temp~2                                                             ; out              ;
+; |clock|divide:u1|temp~3                                                             ; |clock|divide:u1|temp~3                                                             ; out              ;
+; |clock|divide:u1|temp~4                                                             ; |clock|divide:u1|temp~4                                                             ; out              ;
+; |clock|divide:u1|temp~5                                                             ; |clock|divide:u1|temp~5                                                             ; out              ;
+; |clock|divide:u1|temp~6                                                             ; |clock|divide:u1|temp~6                                                             ; out              ;
+; |clock|divide:u1|temp~7                                                             ; |clock|divide:u1|temp~7                                                             ; out              ;
+; |clock|divide:u1|temp~8                                                             ; |clock|divide:u1|temp~8                                                             ; out              ;
+; |clock|divide:u1|temp~9                                                             ; |clock|divide:u1|temp~9                                                             ; out              ;
+; |clock|divide:u1|temp[0]                                                            ; |clock|divide:u1|temp[0]                                                            ; regout           ;
+; |clock|divide:u1|temp[8]                                                            ; |clock|divide:u1|temp[8]                                                            ; regout           ;
+; |clock|divide:u1|temp[9]                                                            ; |clock|divide:u1|temp[9]                                                            ; regout           ;
+; |clock|divide:u1|LessThan0~0                                                        ; |clock|divide:u1|LessThan0~0                                                        ; out0             ;
+; |clock|divide:u1|LessThan0~1                                                        ; |clock|divide:u1|LessThan0~1                                                        ; out0             ;
+; |clock|divide:u1|LessThan0~2                                                        ; |clock|divide:u1|LessThan0~2                                                        ; out0             ;
+; |clock|divide:u1|LessThan0~3                                                        ; |clock|divide:u1|LessThan0~3                                                        ; out0             ;
+; |clock|divide:u1|LessThan0~4                                                        ; |clock|divide:u1|LessThan0~4                                                        ; out0             ;
+; |clock|divide:u1|LessThan0~5                                                        ; |clock|divide:u1|LessThan0~5                                                        ; out0             ;
+; |clock|divide:u1|LessThan0~6                                                        ; |clock|divide:u1|LessThan0~6                                                        ; out0             ;
+; |clock|divide:u1|LessThan0~7                                                        ; |clock|divide:u1|LessThan0~7                                                        ; out0             ;
+; |clock|divide:u1|LessThan0~8                                                        ; |clock|divide:u1|LessThan0~8                                                        ; out0             ;
+; |clock|divide:u1|LessThan0~9                                                        ; |clock|divide:u1|LessThan0~9                                                        ; out0             ;
+; |clock|divide:u1|LessThan0~10                                                       ; |clock|divide:u1|LessThan0~10                                                       ; out0             ;
+; |clock|divide:u1|LessThan0~11                                                       ; |clock|divide:u1|LessThan0~11                                                       ; out0             ;
+; |clock|count_24:u4|Add1~0                                                           ; |clock|count_24:u4|Add1~0                                                           ; out0             ;
+; |clock|count_24:u4|Add1~1                                                           ; |clock|count_24:u4|Add1~1                                                           ; out0             ;
+; |clock|count_24:u4|Add1~2                                                           ; |clock|count_24:u4|Add1~2                                                           ; out0             ;
+; |clock|count_60:u3|Add1~0                                                           ; |clock|count_60:u3|Add1~0                                                           ; out0             ;
+; |clock|count_60:u3|Add1~1                                                           ; |clock|count_60:u3|Add1~1                                                           ; out0             ;
+; |clock|count_60:u3|Add1~2                                                           ; |clock|count_60:u3|Add1~2                                                           ; out0             ;
+; |clock|count_60:u3|Add1~3                                                           ; |clock|count_60:u3|Add1~3                                                           ; out0             ;
+; |clock|count_60:u3|Add1~4                                                           ; |clock|count_60:u3|Add1~4                                                           ; out0             ;
+; |clock|count_60:u2|Add0~0                                                           ; |clock|count_60:u2|Add0~0                                                           ; out0             ;
+; |clock|count_60:u2|Add0~1                                                           ; |clock|count_60:u2|Add0~1                                                           ; out0             ;
+; |clock|count_60:u2|Add0~2                                                           ; |clock|count_60:u2|Add0~2                                                           ; out0             ;
+; |clock|count_60:u2|Add1~0                                                           ; |clock|count_60:u2|Add1~0                                                           ; out0             ;
+; |clock|count_60:u2|Add1~1                                                           ; |clock|count_60:u2|Add1~1                                                           ; out0             ;
+; |clock|count_60:u2|Add1~2                                                           ; |clock|count_60:u2|Add1~2                                                           ; out0             ;
+; |clock|count_60:u2|Add1~3                                                           ; |clock|count_60:u2|Add1~3                                                           ; out0             ;
+; |clock|count_60:u2|Add1~4                                                           ; |clock|count_60:u2|Add1~4                                                           ; out0             ;
+; |clock|divide:u1|Add0~0                                                             ; |clock|divide:u1|Add0~0                                                             ; out0             ;
+; |clock|divide:u1|Add0~1                                                             ; |clock|divide:u1|Add0~1                                                             ; out0             ;
+; |clock|divide:u1|Add0~2                                                             ; |clock|divide:u1|Add0~2                                                             ; out0             ;
+; |clock|divide:u1|Add0~3                                                             ; |clock|divide:u1|Add0~3                                                             ; out0             ;
+; |clock|divide:u1|Add0~4                                                             ; |clock|divide:u1|Add0~4                                                             ; out0             ;
+; |clock|divide:u1|Add0~5                                                             ; |clock|divide:u1|Add0~5                                                             ; out0             ;
+; |clock|divide:u1|Add0~6                                                             ; |clock|divide:u1|Add0~6                                                             ; out0             ;
+; |clock|divide:u1|Add0~7                                                             ; |clock|divide:u1|Add0~7                                                             ; out0             ;
+; |clock|divide:u1|Add0~8                                                             ; |clock|divide:u1|Add0~8                                                             ; out0             ;
+; |clock|divide:u1|Add0~9                                                             ; |clock|divide:u1|Add0~9                                                             ; out0             ;
+; |clock|divide:u1|Add0~10                                                            ; |clock|divide:u1|Add0~10                                                            ; out0             ;
+; |clock|divide:u1|Add0~11                                                            ; |clock|divide:u1|Add0~11                                                            ; out0             ;
+; |clock|divide:u1|Add0~12                                                            ; |clock|divide:u1|Add0~12                                                            ; out0             ;
+; |clock|divide:u1|Add0~13                                                            ; |clock|divide:u1|Add0~13                                                            ; out0             ;
+; |clock|divide:u1|Add0~14                                                            ; |clock|divide:u1|Add0~14                                                            ; out0             ;
+; |clock|divide:u1|Add0~15                                                            ; |clock|divide:u1|Add0~15                                                            ; out0             ;
+; |clock|divide:u1|Add0~16                                                            ; |clock|divide:u1|Add0~16                                                            ; out0             ;
+; |clock|ring_bell:u6|Equal1~0                                                        ; |clock|ring_bell:u6|Equal1~0                                                        ; out0             ;
+; |clock|ring_bell:u6|Equal2~0                                                        ; |clock|ring_bell:u6|Equal2~0                                                        ; out0             ;
+; |clock|ring_bell:u6|Equal3~0                                                        ; |clock|ring_bell:u6|Equal3~0                                                        ; out0             ;
+; |clock|ring_bell:u6|Equal4~0                                                        ; |clock|ring_bell:u6|Equal4~0                                                        ; out0             ;
+; |clock|ring_bell:u6|Equal5~0                                                        ; |clock|ring_bell:u6|Equal5~0                                                        ; out0             ;
+; |clock|ring_bell:u6|Equal6~0                                                        ; |clock|ring_bell:u6|Equal6~0                                                        ; out0             ;
+; |clock|ring_bell:u6|Equal7~0                                                        ; |clock|ring_bell:u6|Equal7~0                                                        ; out0             ;
+; |clock|count_24:u4|Equal0~0                                                         ; |clock|count_24:u4|Equal0~0                                                         ; out0             ;
+; |clock|count_60:u3|Equal0~0                                                         ; |clock|count_60:u3|Equal0~0                                                         ; out0             ;
+; |clock|count_60:u2|Equal0~0                                                         ; |clock|count_60:u2|Equal0~0                                                         ; out0             ;
+; |clock|count_60:u2|Equal1~0                                                         ; |clock|count_60:u2|Equal1~0                                                         ; out0             ;
+; |clock|divide:u1|Equal0~0                                                           ; |clock|divide:u1|Equal0~0                                                           ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|_~0                    ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|_~0                    ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout   ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|_~1                    ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|_~1                    ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout   ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|_~2                    ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|_~2                    ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout   ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|_~0                    ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|_~0                    ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout   ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|_~1                    ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|_~1                    ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout   ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|_~2                    ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|_~2                    ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout   ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|_~0                    ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|_~0                    ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout   ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n0_mux_dataout   ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~0 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|_~1                    ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|_~1                    ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout   ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout   ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~0 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|_~2                    ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|_~2                    ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout~1 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout   ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l2_w0_n0_mux_dataout   ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~0                           ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~0                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~1                           ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~1                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~2                           ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~2                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~3                           ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~3                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~4                           ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~4                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~5                           ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~5                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~6                           ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~6                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~7                           ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~7                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~8                           ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~8                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~9                           ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~9                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~10                          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~10                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~11                          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~11                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~12                          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~12                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~13                          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~13                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~14                          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|_~14                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~0                           ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~0                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~1                           ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~1                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~2                           ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~2                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~3                           ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~3                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~4                           ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~4                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~5                           ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~5                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~6                           ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~6                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~7                           ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~7                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~8                           ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~8                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~9                           ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~9                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~10                          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~10                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~11                          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~11                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~12                          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~12                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~13                          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~13                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~14                          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|_~14                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~0                           ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~0                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~1                           ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~1                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~2                           ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~2                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~3                           ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~3                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~4                           ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~4                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~5                           ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~5                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~6                           ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~6                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~7                           ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~7                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~8                           ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~8                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~9                           ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~9                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~10                          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~10                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~11                          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~11                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~12                          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~12                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~13                          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~13                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~14                          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|_~14                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~0                           ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~0                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~1                           ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~1                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~2                           ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~2                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~3                           ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~3                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~4                           ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~4                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~5                           ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~5                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~6                           ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~6                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~7                           ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~7                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~8                           ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~8                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~9                           ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~9                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~10                          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~10                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~11                          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~11                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~12                          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~12                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~13                          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~13                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~14                          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|_~14                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~0                           ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~0                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~1                           ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~1                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~2                           ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~2                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~3                           ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~3                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~4                           ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~4                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~5                           ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~5                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~6                           ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~6                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~7                           ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~7                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~8                           ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~8                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~9                           ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~9                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~10                          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~10                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~11                          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~11                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~12                          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~12                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~13                          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~13                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~14                          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|_~14                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~0                           ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~0                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~1                           ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~1                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~2                           ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~2                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~3                           ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~3                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~4                           ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~4                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~5                           ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~5                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~6                           ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~6                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~7                           ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~7                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~8                           ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~8                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~9                           ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~9                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~10                          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~10                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~11                          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~11                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~12                          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~12                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~13                          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~13                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~14                          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|_~14                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~0                           ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~0                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~1                           ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~1                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~2                           ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~2                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~3                           ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~3                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~4                           ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~4                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n4_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~5                           ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~5                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~6                           ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~6                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~7                           ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~7                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~8                           ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~8                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~9                           ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~9                           ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~10                          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~10                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~11                          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~11                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~12                          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~12                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~13                          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~13                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l3_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~14                          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|_~14                          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l4_w0_n0_mux_dataout          ; out0             ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                     ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                           ; Output Port Name                                                                    ; Output Port Type ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; |clock|ring                                                                         ; |clock|ring                                                                         ; pin_out          ;
+; |clock|ledout2[3]                                                                   ; |clock|ledout2[3]                                                                   ; pin_out          ;
+; |clock|ledout2[10]                                                                  ; |clock|ledout2[10]                                                                  ; pin_out          ;
+; |clock|ledout2[11]                                                                  ; |clock|ledout2[11]                                                                  ; pin_out          ;
+; |clock|ledout2[12]                                                                  ; |clock|ledout2[12]                                                                  ; pin_out          ;
+; |clock|ledout2[13]                                                                  ; |clock|ledout2[13]                                                                  ; pin_out          ;
+; |clock|ledout2[14]                                                                  ; |clock|ledout2[14]                                                                  ; pin_out          ;
+; |clock|ledout2[15]                                                                  ; |clock|ledout2[15]                                                                  ; pin_out          ;
+; |clock|ledout2[18]                                                                  ; |clock|ledout2[18]                                                                  ; pin_out          ;
+; |clock|ledout2[19]                                                                  ; |clock|ledout2[19]                                                                  ; pin_out          ;
+; |clock|ring_bell:u6|ring~0                                                          ; |clock|ring_bell:u6|ring~0                                                          ; out0             ;
+; |clock|ring_bell:u6|ring~1                                                          ; |clock|ring_bell:u6|ring~1                                                          ; out0             ;
+; |clock|ring_bell:u6|ring                                                            ; |clock|ring_bell:u6|ring                                                            ; out0             ;
+; |clock|count_24:u4|num1[0]                                                          ; |clock|count_24:u4|num1[0]                                                          ; regout           ;
+; |clock|count_24:u4|process_2~0                                                      ; |clock|count_24:u4|process_2~0                                                      ; out0             ;
+; |clock|count_24:u4|num0~0                                                           ; |clock|count_24:u4|num0~0                                                           ; out              ;
+; |clock|count_24:u4|num0~4                                                           ; |clock|count_24:u4|num0~4                                                           ; out              ;
+; |clock|count_24:u4|num1~0                                                           ; |clock|count_24:u4|num1~0                                                           ; out              ;
+; |clock|count_24:u4|num1~1                                                           ; |clock|count_24:u4|num1~1                                                           ; out              ;
+; |clock|count_24:u4|num1~2                                                           ; |clock|count_24:u4|num1~2                                                           ; out              ;
+; |clock|count_24:u4|num1~3                                                           ; |clock|count_24:u4|num1~3                                                           ; out              ;
+; |clock|count_24:u4|num1~4                                                           ; |clock|count_24:u4|num1~4                                                           ; out              ;
+; |clock|count_24:u4|num1~5                                                           ; |clock|count_24:u4|num1~5                                                           ; out              ;
+; |clock|count_24:u4|num1~6                                                           ; |clock|count_24:u4|num1~6                                                           ; out              ;
+; |clock|count_24:u4|num1~7                                                           ; |clock|count_24:u4|num1~7                                                           ; out              ;
+; |clock|count_24:u4|num0[3]                                                          ; |clock|count_24:u4|num0[3]                                                          ; regout           ;
+; |clock|count_24:u4|num0[2]                                                          ; |clock|count_24:u4|num0[2]                                                          ; regout           ;
+; |clock|count_24:u4|num1[3]                                                          ; |clock|count_24:u4|num1[3]                                                          ; regout           ;
+; |clock|count_24:u4|num1[2]                                                          ; |clock|count_24:u4|num1[2]                                                          ; regout           ;
+; |clock|count_24:u4|num1[1]                                                          ; |clock|count_24:u4|num1[1]                                                          ; regout           ;
+; |clock|count_60:u3|process_1~0                                                      ; |clock|count_60:u3|process_1~0                                                      ; out0             ;
+; |clock|count_60:u3|process_1~1                                                      ; |clock|count_60:u3|process_1~1                                                      ; out0             ;
+; |clock|count_60:u3|num1~0                                                           ; |clock|count_60:u3|num1~0                                                           ; out              ;
+; |clock|count_60:u3|num1~1                                                           ; |clock|count_60:u3|num1~1                                                           ; out              ;
+; |clock|count_60:u3|cout                                                             ; |clock|count_60:u3|cout                                                             ; regout           ;
+; |clock|count_60:u3|num1[3]                                                          ; |clock|count_60:u3|num1[3]                                                          ; regout           ;
+; |clock|count_60:u3|num1[2]                                                          ; |clock|count_60:u3|num1[2]                                                          ; regout           ;
+; |clock|count_60:u2|num1~0                                                           ; |clock|count_60:u2|num1~0                                                           ; out              ;
+; |clock|count_60:u2|num1[3]                                                          ; |clock|count_60:u2|num1[3]                                                          ; regout           ;
+; |clock|count_24:u4|Add0~0                                                           ; |clock|count_24:u4|Add0~0                                                           ; out0             ;
+; |clock|count_24:u4|Add0~1                                                           ; |clock|count_24:u4|Add0~1                                                           ; out0             ;
+; |clock|count_24:u4|Add0~2                                                           ; |clock|count_24:u4|Add0~2                                                           ; out0             ;
+; |clock|count_24:u4|Add0~3                                                           ; |clock|count_24:u4|Add0~3                                                           ; out0             ;
+; |clock|count_24:u4|Add0~4                                                           ; |clock|count_24:u4|Add0~4                                                           ; out0             ;
+; |clock|count_24:u4|Add1~3                                                           ; |clock|count_24:u4|Add1~3                                                           ; out0             ;
+; |clock|count_24:u4|Add1~4                                                           ; |clock|count_24:u4|Add1~4                                                           ; out0             ;
+; |clock|count_60:u3|Add0~1                                                           ; |clock|count_60:u3|Add0~1                                                           ; out0             ;
+; |clock|count_60:u3|Add0~2                                                           ; |clock|count_60:u3|Add0~2                                                           ; out0             ;
+; |clock|count_60:u3|Add0~3                                                           ; |clock|count_60:u3|Add0~3                                                           ; out0             ;
+; |clock|count_60:u3|Add0~4                                                           ; |clock|count_60:u3|Add0~4                                                           ; out0             ;
+; |clock|count_60:u2|Add0~3                                                           ; |clock|count_60:u2|Add0~3                                                           ; out0             ;
+; |clock|count_60:u2|Add0~4                                                           ; |clock|count_60:u2|Add0~4                                                           ; out0             ;
+; |clock|ring_bell:u6|Equal0~0                                                        ; |clock|ring_bell:u6|Equal0~0                                                        ; out0             ;
+; |clock|count_24:u4|Equal1~0                                                         ; |clock|count_24:u4|Equal1~0                                                         ; out0             ;
+; |clock|count_24:u4|Equal2~0                                                         ; |clock|count_24:u4|Equal2~0                                                         ; out0             ;
+; |clock|count_60:u3|Equal1~0                                                         ; |clock|count_60:u3|Equal1~0                                                         ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; out0             ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                     ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                           ; Output Port Name                                                                    ; Output Port Type ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; |clock|ring                                                                         ; |clock|ring                                                                         ; pin_out          ;
+; |clock|ledout2[3]                                                                   ; |clock|ledout2[3]                                                                   ; pin_out          ;
+; |clock|ledout2[9]                                                                   ; |clock|ledout2[9]                                                                   ; pin_out          ;
+; |clock|ledout2[10]                                                                  ; |clock|ledout2[10]                                                                  ; pin_out          ;
+; |clock|ledout2[11]                                                                  ; |clock|ledout2[11]                                                                  ; pin_out          ;
+; |clock|ledout2[12]                                                                  ; |clock|ledout2[12]                                                                  ; pin_out          ;
+; |clock|ledout2[13]                                                                  ; |clock|ledout2[13]                                                                  ; pin_out          ;
+; |clock|ledout2[14]                                                                  ; |clock|ledout2[14]                                                                  ; pin_out          ;
+; |clock|ledout2[15]                                                                  ; |clock|ledout2[15]                                                                  ; pin_out          ;
+; |clock|ledout2[18]                                                                  ; |clock|ledout2[18]                                                                  ; pin_out          ;
+; |clock|ledout2[19]                                                                  ; |clock|ledout2[19]                                                                  ; pin_out          ;
+; |clock|ring_bell:u6|ring~0                                                          ; |clock|ring_bell:u6|ring~0                                                          ; out0             ;
+; |clock|ring_bell:u6|ring~1                                                          ; |clock|ring_bell:u6|ring~1                                                          ; out0             ;
+; |clock|ring_bell:u6|ring                                                            ; |clock|ring_bell:u6|ring                                                            ; out0             ;
+; |clock|count_24:u4|num1[0]                                                          ; |clock|count_24:u4|num1[0]                                                          ; regout           ;
+; |clock|count_24:u4|process_2~0                                                      ; |clock|count_24:u4|process_2~0                                                      ; out0             ;
+; |clock|count_24:u4|num0~0                                                           ; |clock|count_24:u4|num0~0                                                           ; out              ;
+; |clock|count_24:u4|num0~4                                                           ; |clock|count_24:u4|num0~4                                                           ; out              ;
+; |clock|count_24:u4|num1~0                                                           ; |clock|count_24:u4|num1~0                                                           ; out              ;
+; |clock|count_24:u4|num1~1                                                           ; |clock|count_24:u4|num1~1                                                           ; out              ;
+; |clock|count_24:u4|num1~2                                                           ; |clock|count_24:u4|num1~2                                                           ; out              ;
+; |clock|count_24:u4|num1~3                                                           ; |clock|count_24:u4|num1~3                                                           ; out              ;
+; |clock|count_24:u4|num1~4                                                           ; |clock|count_24:u4|num1~4                                                           ; out              ;
+; |clock|count_24:u4|num1~5                                                           ; |clock|count_24:u4|num1~5                                                           ; out              ;
+; |clock|count_24:u4|num1~6                                                           ; |clock|count_24:u4|num1~6                                                           ; out              ;
+; |clock|count_24:u4|num1~7                                                           ; |clock|count_24:u4|num1~7                                                           ; out              ;
+; |clock|count_24:u4|num0[3]                                                          ; |clock|count_24:u4|num0[3]                                                          ; regout           ;
+; |clock|count_24:u4|num0[2]                                                          ; |clock|count_24:u4|num0[2]                                                          ; regout           ;
+; |clock|count_24:u4|num1[3]                                                          ; |clock|count_24:u4|num1[3]                                                          ; regout           ;
+; |clock|count_24:u4|num1[2]                                                          ; |clock|count_24:u4|num1[2]                                                          ; regout           ;
+; |clock|count_24:u4|num1[1]                                                          ; |clock|count_24:u4|num1[1]                                                          ; regout           ;
+; |clock|count_60:u3|process_1~0                                                      ; |clock|count_60:u3|process_1~0                                                      ; out0             ;
+; |clock|count_60:u3|process_1~1                                                      ; |clock|count_60:u3|process_1~1                                                      ; out0             ;
+; |clock|count_60:u3|num1~0                                                           ; |clock|count_60:u3|num1~0                                                           ; out              ;
+; |clock|count_60:u3|num1~1                                                           ; |clock|count_60:u3|num1~1                                                           ; out              ;
+; |clock|count_60:u3|num1~2                                                           ; |clock|count_60:u3|num1~2                                                           ; out              ;
+; |clock|count_60:u3|cout                                                             ; |clock|count_60:u3|cout                                                             ; regout           ;
+; |clock|count_60:u3|num1[3]                                                          ; |clock|count_60:u3|num1[3]                                                          ; regout           ;
+; |clock|count_60:u3|num1[2]                                                          ; |clock|count_60:u3|num1[2]                                                          ; regout           ;
+; |clock|count_60:u3|num1[1]                                                          ; |clock|count_60:u3|num1[1]                                                          ; regout           ;
+; |clock|count_60:u2|num1~0                                                           ; |clock|count_60:u2|num1~0                                                           ; out              ;
+; |clock|count_60:u2|num1[3]                                                          ; |clock|count_60:u2|num1[3]                                                          ; regout           ;
+; |clock|count_24:u4|Add0~0                                                           ; |clock|count_24:u4|Add0~0                                                           ; out0             ;
+; |clock|count_24:u4|Add0~1                                                           ; |clock|count_24:u4|Add0~1                                                           ; out0             ;
+; |clock|count_24:u4|Add0~2                                                           ; |clock|count_24:u4|Add0~2                                                           ; out0             ;
+; |clock|count_24:u4|Add0~3                                                           ; |clock|count_24:u4|Add0~3                                                           ; out0             ;
+; |clock|count_24:u4|Add0~4                                                           ; |clock|count_24:u4|Add0~4                                                           ; out0             ;
+; |clock|count_24:u4|Add1~3                                                           ; |clock|count_24:u4|Add1~3                                                           ; out0             ;
+; |clock|count_24:u4|Add1~4                                                           ; |clock|count_24:u4|Add1~4                                                           ; out0             ;
+; |clock|count_60:u3|Add0~0                                                           ; |clock|count_60:u3|Add0~0                                                           ; out0             ;
+; |clock|count_60:u3|Add0~1                                                           ; |clock|count_60:u3|Add0~1                                                           ; out0             ;
+; |clock|count_60:u3|Add0~2                                                           ; |clock|count_60:u3|Add0~2                                                           ; out0             ;
+; |clock|count_60:u3|Add0~3                                                           ; |clock|count_60:u3|Add0~3                                                           ; out0             ;
+; |clock|count_60:u3|Add0~4                                                           ; |clock|count_60:u3|Add0~4                                                           ; out0             ;
+; |clock|count_60:u2|Add0~3                                                           ; |clock|count_60:u2|Add0~3                                                           ; out0             ;
+; |clock|count_60:u2|Add0~4                                                           ; |clock|count_60:u2|Add0~4                                                           ; out0             ;
+; |clock|ring_bell:u6|Equal0~0                                                        ; |clock|ring_bell:u6|Equal0~0                                                        ; out0             ;
+; |clock|count_24:u4|Equal1~0                                                         ; |clock|count_24:u4|Equal1~0                                                         ; out0             ;
+; |clock|count_24:u4|Equal2~0                                                         ; |clock|count_24:u4|Equal2~0                                                         ; out0             ;
+; |clock|count_60:u3|Equal1~0                                                         ; |clock|count_60:u3|Equal1~0                                                         ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux2|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~1 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; |clock|two_four_trans:u5|lpm_mux:Mux1|mux_0oc:auto_generated|l1_w0_n0_mux_dataout~0 ; out0             ;
+; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; |clock|two_four_trans:u5|lpm_mux:Mux0|mux_0oc:auto_generated|l1_w0_n1_mux_dataout~1 ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux6|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux5|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux4|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux3|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n2_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n4_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n5_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n6_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l1_w0_n7_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n2_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l2_w0_n3_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux2|mux_lpc:auto_generated|l3_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n1_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux1|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout~1        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n0_mux_dataout          ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l1_w0_n3_mux_dataout~0        ; out0             ;
+; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; |clock|display:u7|lpm_mux:Mux0|mux_lpc:auto_generated|l2_w0_n0_mux_dataout~1        ; out0             ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon May 30 14:48:54 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off clock -c clock
+Info: Using vector source file "D:/学习用文档/数字逻辑课程设计/最终项目/project1/project/clock/clock.vwf"
+Info: Simulation end time 1500.0 s did not reach the end of the input vector, which ended at 5000.0 s
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      84.36 %
+Info: Number of transitions in simulation is 23030837
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 161 megabytes
+    Info: Processing ended: Mon May 30 14:49:44 2022
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:00:49
+
+

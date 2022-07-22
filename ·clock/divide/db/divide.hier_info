@@ -1,0 +1,15 @@
+|divide
+clk => temp[9].CLK
+clk => temp[8].CLK
+clk => temp[7].CLK
+clk => temp[6].CLK
+clk => temp[5].CLK
+clk => temp[4].CLK
+clk => temp[3].CLK
+clk => temp[2].CLK
+clk => temp[1].CLK
+clk => temp[0].CLK
+clk => cp~reg0.CLK
+cp <= cp~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

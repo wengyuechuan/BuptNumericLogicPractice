@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.500 ns
+From           : num1[3]
+To             : cout
+From Clock     : change
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.100 ns
+From           : change
+To             : cout
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'change'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 217.39 MHz ( period = 4.600 ns )
+From           : lpm_counter:num0_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2]
+To             : num1[3]
+From Clock     : change
+To Clock       : change
+Failed Paths   : 0
+
+Type           : Clock Setup: 'qd'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 217.39 MHz ( period = 4.600 ns )
+From           : lpm_counter:num0_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2]
+To             : num1[3]
+From Clock     : qd
+To Clock       : qd
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 217.39 MHz ( period = 4.600 ns )
+From           : lpm_counter:num0_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[2]
+To             : num1[3]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

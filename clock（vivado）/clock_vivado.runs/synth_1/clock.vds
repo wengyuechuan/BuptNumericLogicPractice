@@ -1,0 +1,318 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 13 17:03:59 2022
+# Process ID: 28592
+# Current directory: D:/vhdl/clock_vivado/clock_vivado.runs/synth_1
+# Command line: vivado.exe -log clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock.tcl
+# Log file: D:/vhdl/clock_vivado/clock_vivado.runs/synth_1/clock.vds
+# Journal file: D:/vhdl/clock_vivado/clock_vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source clock.tcl -notrace
+Command: synth_design -top clock -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4732 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 362.734 ; gain = 101.520
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2040] formal port q1 of mode buffer cannot be associated with actual port ledout2 of mode out [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:59]
+WARNING: [Synth 8-2040] formal port q0 of mode buffer cannot be associated with actual port ledout2 of mode out [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:60]
+WARNING: [Synth 8-2040] formal port q1 of mode buffer cannot be associated with actual port ledout2 of mode out [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:60]
+WARNING: [Synth 8-2040] formal port q0 of mode buffer cannot be associated with actual port ledout2 of mode out [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:61]
+WARNING: [Synth 8-2040] formal port q1 of mode buffer cannot be associated with actual port ledout2 of mode out [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'clock' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:14]
+INFO: [Synth 8-3491] module 'divide' declared at 'D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/divide.vhd:6' bound to instance 'u1' of component 'divide' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'divide' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/divide.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'divide' (1#1) [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/divide.vhd:13]
+INFO: [Synth 8-3491] module 'count_60' declared at 'D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_60.vhd:6' bound to instance 'u2' of component 'count_60' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'count_60' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_60.vhd:14]
+WARNING: [Synth 8-614] signal 'qd' is read in the process but is not in the sensitivity list [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_60.vhd:18]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_60.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'count_60' (2#1) [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_60.vhd:14]
+INFO: [Synth 8-3491] module 'count_60' declared at 'D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_60.vhd:6' bound to instance 'u3' of component 'count_60' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:60]
+INFO: [Synth 8-3491] module 'count_24' declared at 'D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_24.vhd:6' bound to instance 'u4' of component 'count_24' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'count_24' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_24.vhd:14]
+WARNING: [Synth 8-614] signal 'qd' is read in the process but is not in the sensitivity list [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_24.vhd:18]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_24.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'count_24' (3#1) [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/count_24.vhd:14]
+INFO: [Synth 8-3491] module 'two_four_trans' declared at 'D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/two_four_trans.vhd:6' bound to instance 'u5' of component 'two_four_trans' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'two_four_trans' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/two_four_trans.vhd:14]
+INFO: [Synth 8-226] default block is never used [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/two_four_trans.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'two_four_trans' (4#1) [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/two_four_trans.vhd:14]
+INFO: [Synth 8-3491] module 'ring_bell' declared at 'D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/ring_bell.vhd:6' bound to instance 'u6' of component 'ring_bell' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ring_bell' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/ring_bell.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'ring_bell' (5#1) [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/ring_bell.vhd:13]
+INFO: [Synth 8-3491] module 'display' declared at 'D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/display.vhd:6' bound to instance 'u7' of component 'display' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'display' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/display.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'display' (6#1) [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/display.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'clock' (7#1) [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/clock.vhd:14]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 416.430 ; gain = 155.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 416.430 ; gain = 155.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 416.430 ; gain = 155.215
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [D:/vhdl/clock_vivado/clock_vivado.srcs/sources_1/new/two_four_trans.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 416.430 ; gain = 155.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module divide 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module count_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module count_24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module two_four_trans 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module ring_bell 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (u5/temp_reg[3]) is unused and will be removed from module clock.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 557.098 ; gain = 295.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 557.098 ; gain = 295.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 557.098 ; gain = 295.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 557.098 ; gain = 295.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 557.098 ; gain = 295.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 557.098 ; gain = 295.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 557.098 ; gain = 295.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 557.098 ; gain = 295.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 557.098 ; gain = 295.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     2|
+|2     |LUT1 |     8|
+|3     |LUT2 |     6|
+|4     |LUT3 |    11|
+|5     |LUT4 |    27|
+|6     |LUT5 |     8|
+|7     |LUT6 |     9|
+|8     |FDCE |    27|
+|9     |FDRE |    14|
+|10    |LD   |     3|
+|11    |IBUF |     6|
+|12    |OBUF |    28|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |   149|
+|2     |  u1     |divide         |    30|
+|3     |  u2     |count_60       |    28|
+|4     |  u3     |count_60_0     |    20|
+|5     |  u4     |count_24       |    20|
+|6     |  u5     |two_four_trans |     6|
+|7     |  u6     |ring_bell      |     9|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 557.098 ; gain = 295.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 557.098 ; gain = 295.883
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 557.098 ; gain = 295.883
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 656.254 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 656.254 ; gain = 402.508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 656.254 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/vhdl/clock_vivado/clock_vivado.runs/synth_1/clock.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clock_utilization_synth.rpt -pb clock_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 13 17:04:09 2022...

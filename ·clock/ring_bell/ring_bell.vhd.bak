@@ -1,0 +1,30 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY ring_bell is
+port(
+	clk,co1,co2:in std_logic;
+	ring:buffer std_logic
+	);
+end ring_bell;
+
+architecture arc of ring_bell is
+	signal temp:integer range 0 to 5;
+begin
+	process(clk,co1,co2)
+	begin
+		if(clk'event and clk='1')then
+			if(temp<5)then
+				temp<=temp+1;
+				ring<=not ring;
+			else
+				ring<='0';
+			end if;
+		end if;
+		if(co1='1'and co2='1')then
+			temp<=0;
+		end if;
+	end process;
+end arc;

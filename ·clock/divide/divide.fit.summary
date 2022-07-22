@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sat Apr 16 14:44:44 2022
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : divide
+Top-level Entity Name : divide
+Family : ACEX1K
+Device : EP1K10TC100-1
+Timing Models : Final
+Total logic elements : 24 / 576 ( 4 % )
+Total pins : 2 / 66 ( 3 % )
+Total memory bits : 0 / 12,288 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )

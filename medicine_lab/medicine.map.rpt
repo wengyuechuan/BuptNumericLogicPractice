@@ -1,0 +1,644 @@
+Analysis & Synthesis report for medicine
+Thu Jun 09 13:37:27 2022
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. User-Specified and Inferred Latches
+  8. Source assignments for medicine:inst8|lpm_add_sub:Add1|addcore:adder[0]
+  9. Source assignments for medicine:inst8|lpm_add_sub:Add3|addcore:adder[0]
+ 10. Source assignments for medicine:inst8|lpm_add_sub:Add0|addcore:adder[0]
+ 11. Source assignments for medicine:inst8|lpm_add_sub:Add2|addcore:adder[0]
+ 12. Source assignments for medicine:inst8|lpm_add_sub:Add4|addcore:adder[1]
+ 13. Source assignments for medicine:inst8|lpm_add_sub:Add4|addcore:adder[0]
+ 14. Source assignments for medicine:inst8|lpm_add_sub:Add6|addcore:adder[1]
+ 15. Source assignments for medicine:inst8|lpm_add_sub:Add6|addcore:adder[0]
+ 16. Source assignments for medicine:inst8|lpm_add_sub:Add5|addcore:adder[1]
+ 17. Source assignments for medicine:inst8|lpm_add_sub:Add5|addcore:adder[0]
+ 18. Source assignments for divider:inst|lpm_add_sub:Add0|addcore:adder[1]
+ 19. Source assignments for divider:inst|lpm_add_sub:Add0|addcore:adder[0]
+ 20. Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add1
+ 21. Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add3
+ 22. Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add0
+ 23. Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add2
+ 24. Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add4
+ 25. Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add6
+ 26. Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add5
+ 27. Parameter Settings for Inferred Entity Instance: divider:inst|lpm_add_sub:Add0
+ 28. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                               ;
++-----------------------------+----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Jun 09 13:37:27 2022        ;
+; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name               ; medicine                                     ;
+; Top-level Entity Name       ; total1                                       ;
+; Family                      ; MAX7000S                                     ;
+; Total macrocells            ; 97                                           ;
+; Total pins                  ; 46                                           ;
++-----------------------------+----------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                  ;
++--------------------------------------------------------------+-----------------+---------------+
+; Option                                                       ; Setting         ; Default Value ;
++--------------------------------------------------------------+-----------------+---------------+
+; Device                                                       ; EPM7128SLC84-15 ;               ;
+; Top-level entity name                                        ; total1          ; medicine      ;
+; Family name                                                  ; MAX7000S        ; Stratix II    ;
+; Type of Retiming Performed During Resynthesis                ; Full            ;               ;
+; Resynthesis Optimization Effort                              ; Normal          ;               ;
+; Physical Synthesis Level for Resynthesis                     ; Normal          ;               ;
+; Use Generated Physical Constraints File                      ; On              ;               ;
+; Use smart compilation                                        ; Off             ; Off           ;
+; Create Debugging Nodes for IP Cores                          ; Off             ; Off           ;
+; Preserve fewer node names                                    ; On              ; On            ;
+; Disable OpenCore Plus hardware evaluation                    ; Off             ; Off           ;
+; Verilog Version                                              ; Verilog_2001    ; Verilog_2001  ;
+; VHDL Version                                                 ; VHDL93          ; VHDL93        ;
+; State Machine Processing                                     ; Auto            ; Auto          ;
+; Safe State Machine                                           ; Off             ; Off           ;
+; Extract Verilog State Machines                               ; On              ; On            ;
+; Extract VHDL State Machines                                  ; On              ; On            ;
+; Ignore Verilog initial constructs                            ; Off             ; Off           ;
+; Iteration limit for constant Verilog loops                   ; 5000            ; 5000          ;
+; Iteration limit for non-constant Verilog loops               ; 250             ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On              ; On            ;
+; Parallel Synthesis                                           ; Off             ; Off           ;
+; NOT Gate Push-Back                                           ; On              ; On            ;
+; Power-Up Don't Care                                          ; On              ; On            ;
+; Remove Duplicate Registers                                   ; On              ; On            ;
+; Ignore CARRY Buffers                                         ; Off             ; Off           ;
+; Ignore CASCADE Buffers                                       ; Off             ; Off           ;
+; Ignore GLOBAL Buffers                                        ; Off             ; Off           ;
+; Ignore ROW GLOBAL Buffers                                    ; Off             ; Off           ;
+; Ignore LCELL Buffers                                         ; Auto            ; Auto          ;
+; Ignore SOFT Buffers                                          ; Off             ; Off           ;
+; Limit AHDL Integers to 32 Bits                               ; Off             ; Off           ;
+; Optimization Technique                                       ; Speed           ; Speed         ;
+; Allow XOR Gate Usage                                         ; On              ; On            ;
+; Auto Logic Cell Insertion                                    ; On              ; On            ;
+; Parallel Expander Chain Length                               ; 4               ; 4             ;
+; Auto Parallel Expanders                                      ; On              ; On            ;
+; Auto Open-Drain Pins                                         ; On              ; On            ;
+; Auto Resource Sharing                                        ; Off             ; Off           ;
+; Maximum Fan-in Per Macrocell                                 ; 100             ; 100           ;
+; Use LogicLock Constraints during Resource Balancing          ; On              ; On            ;
+; Ignore translate_off and synthesis_off directives            ; Off             ; Off           ;
+; Show Parameter Settings Tables in Synthesis Report           ; On              ; On            ;
+; HDL message level                                            ; Level2          ; Level2        ;
+; Suppress Register Optimization Related Messages              ; Off             ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100             ; 100           ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100             ; 100           ;
+; Block Design Naming                                          ; Auto            ; Auto          ;
+; Synthesis Effort                                             ; Auto            ; Auto          ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On              ; On            ;
+; Analysis & Synthesis Message Level                           ; Medium          ; Medium        ;
++--------------------------------------------------------------+-----------------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
+; medicine.vhd                     ; yes             ; User VHDL File                     ; D:/Quartusll 9.0/quartus/medicine_lab/medicine.vhd                       ;
+; devider.vhd                      ; yes             ; User VHDL File                     ; D:/Quartusll 9.0/quartus/medicine_lab/devider.vhd                        ;
+; total1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Quartusll 9.0/quartus/medicine_lab/total1.bdf                         ;
+; show.vhd                         ; yes             ; User VHDL File                     ; D:/Quartusll 9.0/quartus/medicine_lab/show.vhd                           ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;
+; addcore.inc                      ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/addcore.inc             ;
+; look_add.inc                     ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/look_add.inc            ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/bypassff.inc            ;
+; altshift.inc                     ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/altshift.inc            ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;
+; alt_mercury_add_sub.inc          ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/alt_mercury_add_sub.inc ;
+; aglobal90.inc                    ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/aglobal90.inc           ;
+; addcore.tdf                      ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/addcore.tdf             ;
+; a_csnbuffer.inc                  ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/a_csnbuffer.inc         ;
+; a_csnbuffer.tdf                  ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/a_csnbuffer.tdf         ;
+; look_add.tdf                     ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/look_add.tdf            ;
+; altshift.tdf                     ; yes             ; Megafunction                       ; d:/quartusll 9.0/quartus/libraries/megafunctions/altshift.tdf            ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++----------------------+----------------------+
+; Resource             ; Usage                ;
++----------------------+----------------------+
+; Logic cells          ; 97                   ;
+; Total registers      ; 43                   ;
+; I/O pins             ; 46                   ;
+; Shareable expanders  ; 10                   ;
+; Parallel expanders   ; 14                   ;
+; Maximum fan-out node ; enable               ;
+; Maximum fan-out      ; 57                   ;
+; Total fan-out        ; 1058                 ;
+; Average fan-out      ; 6.92                 ;
++----------------------+----------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                    ;
++----------------------------+------------+------+------------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name    ; Library Name ;
++----------------------------+------------+------+------------------------+--------------+
+; |total1                    ; 97         ; 46   ; |total1                ; work         ;
+;    |divider:inst|          ; 17         ; 0    ; |total1|divider:inst   ; work         ;
+;    |medicine:inst8|        ; 67         ; 0    ; |total1|medicine:inst8 ; work         ;
+;    |show:inst6|            ; 13         ; 0    ; |total1|show:inst6     ; work         ;
++----------------------------+------------+------+------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                         ;
++----------------------------------------------------+-------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal           ; Free of Timing Hazards ;
++----------------------------------------------------+-------------------------------+------------------------+
+; medicine:inst8|stop_light_m                        ; GND                           ; yes                    ;
+; medicine:inst8|work_light_m                        ; medicine:inst8|work_light_m~0 ; yes                    ;
+; medicine:inst8|warn_light_m                        ; medicine:inst8|warn_light_m~0 ; yes                    ;
+; medicine:inst8|stop                                ; medicine:inst8|warn_light_m~0 ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                               ;                        ;
++----------------------------------------------------+-------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------------------------------------------------+
+; Source assignments for medicine:inst8|lpm_add_sub:Add1|addcore:adder[0] ;
++---------------------------+-------+------+------------------------------+
+; Assignment                ; Value ; From ; To                           ;
++---------------------------+-------+------+------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                            ;
++---------------------------+-------+------+------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Source assignments for medicine:inst8|lpm_add_sub:Add3|addcore:adder[0] ;
++---------------------------+-------+------+------------------------------+
+; Assignment                ; Value ; From ; To                           ;
++---------------------------+-------+------+------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                            ;
++---------------------------+-------+------+------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Source assignments for medicine:inst8|lpm_add_sub:Add0|addcore:adder[0] ;
++---------------------------+-------+------+------------------------------+
+; Assignment                ; Value ; From ; To                           ;
++---------------------------+-------+------+------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                            ;
++---------------------------+-------+------+------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Source assignments for medicine:inst8|lpm_add_sub:Add2|addcore:adder[0] ;
++---------------------------+-------+------+------------------------------+
+; Assignment                ; Value ; From ; To                           ;
++---------------------------+-------+------+------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                            ;
++---------------------------+-------+------+------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Source assignments for medicine:inst8|lpm_add_sub:Add4|addcore:adder[1] ;
++---------------------------+-------+------+------------------------------+
+; Assignment                ; Value ; From ; To                           ;
++---------------------------+-------+------+------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                            ;
++---------------------------+-------+------+------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Source assignments for medicine:inst8|lpm_add_sub:Add4|addcore:adder[0] ;
++---------------------------+-------+------+------------------------------+
+; Assignment                ; Value ; From ; To                           ;
++---------------------------+-------+------+------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                            ;
++---------------------------+-------+------+------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Source assignments for medicine:inst8|lpm_add_sub:Add6|addcore:adder[1] ;
++---------------------------+-------+------+------------------------------+
+; Assignment                ; Value ; From ; To                           ;
++---------------------------+-------+------+------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                            ;
++---------------------------+-------+------+------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Source assignments for medicine:inst8|lpm_add_sub:Add6|addcore:adder[0] ;
++---------------------------+-------+------+------------------------------+
+; Assignment                ; Value ; From ; To                           ;
++---------------------------+-------+------+------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                            ;
++---------------------------+-------+------+------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Source assignments for medicine:inst8|lpm_add_sub:Add5|addcore:adder[1] ;
++---------------------------+-------+------+------------------------------+
+; Assignment                ; Value ; From ; To                           ;
++---------------------------+-------+------+------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                            ;
++---------------------------+-------+------+------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Source assignments for medicine:inst8|lpm_add_sub:Add5|addcore:adder[0] ;
++---------------------------+-------+------+------------------------------+
+; Assignment                ; Value ; From ; To                           ;
++---------------------------+-------+------+------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                            ;
++---------------------------+-------+------+------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Source assignments for divider:inst|lpm_add_sub:Add0|addcore:adder[1] ;
++---------------------------+-------+------+----------------------------+
+; Assignment                ; Value ; From ; To                         ;
++---------------------------+-------+------+----------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                          ;
++---------------------------+-------+------+----------------------------+
+
+
++-----------------------------------------------------------------------+
+; Source assignments for divider:inst|lpm_add_sub:Add0|addcore:adder[0] ;
++---------------------------+-------+------+----------------------------+
+; Assignment                ; Value ; From ; To                         ;
++---------------------------+-------+------+----------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -                          ;
++---------------------------+-------+------+----------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add1 ;
++------------------------+-------------+-------------------------------------------+
+; Parameter Name         ; Value       ; Type                                      ;
++------------------------+-------------+-------------------------------------------+
+; LPM_WIDTH              ; 8           ; Untyped                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                   ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                   ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                   ;
+; LPM_PIPELINE           ; 0           ; Untyped                                   ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                   ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                   ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                   ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                   ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                   ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                        ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                   ;
+; USE_WYS                ; OFF         ; Untyped                                   ;
+; STYLE                  ; FAST        ; Untyped                                   ;
+; CBXI_PARAMETER         ; add_sub_rnh ; Untyped                                   ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                            ;
++------------------------+-------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add3 ;
++------------------------+-------------+-------------------------------------------+
+; Parameter Name         ; Value       ; Type                                      ;
++------------------------+-------------+-------------------------------------------+
+; LPM_WIDTH              ; 8           ; Untyped                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                   ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                   ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                   ;
+; LPM_PIPELINE           ; 0           ; Untyped                                   ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                   ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                   ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                   ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                   ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                   ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                        ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                   ;
+; USE_WYS                ; OFF         ; Untyped                                   ;
+; STYLE                  ; FAST        ; Untyped                                   ;
+; CBXI_PARAMETER         ; add_sub_rnh ; Untyped                                   ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                            ;
++------------------------+-------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add0 ;
++------------------------+-------------+-------------------------------------------+
+; Parameter Name         ; Value       ; Type                                      ;
++------------------------+-------------+-------------------------------------------+
+; LPM_WIDTH              ; 8           ; Untyped                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                   ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                   ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                   ;
+; LPM_PIPELINE           ; 0           ; Untyped                                   ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                   ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                   ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                   ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                   ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                   ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                        ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                   ;
+; USE_WYS                ; OFF         ; Untyped                                   ;
+; STYLE                  ; FAST        ; Untyped                                   ;
+; CBXI_PARAMETER         ; add_sub_rnh ; Untyped                                   ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                            ;
++------------------------+-------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add2 ;
++------------------------+-------------+-------------------------------------------+
+; Parameter Name         ; Value       ; Type                                      ;
++------------------------+-------------+-------------------------------------------+
+; LPM_WIDTH              ; 8           ; Untyped                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                   ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                   ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                   ;
+; LPM_PIPELINE           ; 0           ; Untyped                                   ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                   ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                   ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                   ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                   ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                   ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                        ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                   ;
+; USE_WYS                ; OFF         ; Untyped                                   ;
+; STYLE                  ; FAST        ; Untyped                                   ;
+; CBXI_PARAMETER         ; add_sub_rnh ; Untyped                                   ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                            ;
++------------------------+-------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add4 ;
++------------------------+-------------+-------------------------------------------+
+; Parameter Name         ; Value       ; Type                                      ;
++------------------------+-------------+-------------------------------------------+
+; LPM_WIDTH              ; 12          ; Untyped                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                   ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                   ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                   ;
+; LPM_PIPELINE           ; 0           ; Untyped                                   ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                   ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                   ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                   ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                   ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                   ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                        ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                   ;
+; USE_WYS                ; OFF         ; Untyped                                   ;
+; STYLE                  ; FAST        ; Untyped                                   ;
+; CBXI_PARAMETER         ; add_sub_6ph ; Untyped                                   ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                            ;
++------------------------+-------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add6 ;
++------------------------+-------------+-------------------------------------------+
+; Parameter Name         ; Value       ; Type                                      ;
++------------------------+-------------+-------------------------------------------+
+; LPM_WIDTH              ; 12          ; Untyped                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                   ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                   ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                   ;
+; LPM_PIPELINE           ; 0           ; Untyped                                   ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                   ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                   ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                   ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                   ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                   ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                        ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                   ;
+; USE_WYS                ; OFF         ; Untyped                                   ;
+; STYLE                  ; FAST        ; Untyped                                   ;
+; CBXI_PARAMETER         ; add_sub_6ph ; Untyped                                   ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                            ;
++------------------------+-------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: medicine:inst8|lpm_add_sub:Add5 ;
++------------------------+-------------+-------------------------------------------+
+; Parameter Name         ; Value       ; Type                                      ;
++------------------------+-------------+-------------------------------------------+
+; LPM_WIDTH              ; 12          ; Untyped                                   ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                   ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                   ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                   ;
+; LPM_PIPELINE           ; 0           ; Untyped                                   ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                   ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                   ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                   ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                   ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                   ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                        ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                   ;
+; USE_WYS                ; OFF         ; Untyped                                   ;
+; STYLE                  ; FAST        ; Untyped                                   ;
+; CBXI_PARAMETER         ; add_sub_6ph ; Untyped                                   ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                              ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                            ;
++------------------------+-------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: divider:inst|lpm_add_sub:Add0 ;
++------------------------+-------------+-----------------------------------------+
+; Parameter Name         ; Value       ; Type                                    ;
++------------------------+-------------+-----------------------------------------+
+; LPM_WIDTH              ; 14          ; Untyped                                 ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                 ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                 ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                                 ;
+; LPM_PIPELINE           ; 0           ; Untyped                                 ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                 ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                 ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                                 ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                 ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                 ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                      ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                 ;
+; USE_WYS                ; OFF         ; Untyped                                 ;
+; STYLE                  ; FAST        ; Untyped                                 ;
+; CBXI_PARAMETER         ; add_sub_8ph ; Untyped                                 ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                            ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                          ;
++------------------------+-------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Jun 09 13:37:25 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off medicine -c medicine
+Info: Found 2 design units, including 1 entities, in source file medicine.vhd
+    Info: Found design unit 1: medicine-do
+    Info: Found entity 1: medicine
+Info: Found 2 design units, including 1 entities, in source file total.vhd
+    Info: Found design unit 1: total-art
+    Info: Found entity 1: total
+Info: Found 2 design units, including 1 entities, in source file devider.vhd
+    Info: Found design unit 1: divider-art
+    Info: Found entity 1: divider
+Info: Found 1 design units, including 1 entities, in source file total1.bdf
+    Info: Found entity 1: total1
+Info: Found 2 design units, including 1 entities, in source file show.vhd
+    Info: Found design unit 1: show-art
+    Info: Found entity 1: show
+Info: Elaborating entity "total1" for the top level hierarchy
+Info: Elaborating entity "medicine" for hierarchy "medicine:inst8"
+Warning (10492): VHDL Process Statement warning at medicine.vhd(40): signal "pnpb_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at medicine.vhd(40): signal "max_bottle_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at medicine.vhd(43): signal "cb" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at medicine.vhd(43): signal "max_bottle_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at medicine.vhd(48): signal "stop" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at medicine.vhd(48): signal "pnpb_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at medicine.vhd(48): signal "max_bottle_m" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at medicine.vhd(85): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at medicine.vhd(87): signal "cb" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at medicine.vhd(90): signal "cp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at medicine.vhd(28): inferring latch(es) for signal or variable "stop", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at medicine.vhd(28): inferring latch(es) for signal or variable "warn_light_m", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at medicine.vhd(28): inferring latch(es) for signal or variable "work_light_m", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at medicine.vhd(28): inferring latch(es) for signal or variable "stop_light_m", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "stop_light_m" at medicine.vhd(28)
+Info (10041): Inferred latch for "work_light_m" at medicine.vhd(28)
+Info (10041): Inferred latch for "warn_light_m" at medicine.vhd(28)
+Info (10041): Inferred latch for "stop" at medicine.vhd(28)
+Info: Elaborating entity "divider" for hierarchy "divider:inst"
+Info: Elaborating entity "show" for hierarchy "show:inst6"
+Info: Inferred 8 megafunctions from design logic
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "medicine:inst8|Add1"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "medicine:inst8|Add3"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "medicine:inst8|Add0"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "medicine:inst8|Add2"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "medicine:inst8|Add4"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "medicine:inst8|Add6"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "medicine:inst8|Add5"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "divider:inst|Add0"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add1"
+Info: Instantiated megafunction "medicine:inst8|lpm_add_sub:Add1" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add1|addcore:adder[0]", which is child of megafunction instantiation "medicine:inst8|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:oflow_node", which is child of megafunction instantiation "medicine:inst8|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node", which is child of megafunction instantiation "medicine:inst8|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add1|look_add:look_ahead_unit", which is child of megafunction instantiation "medicine:inst8|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add1|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "medicine:inst8|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add1|altshift:carry_ext_latency_ffs", which is child of megafunction instantiation "medicine:inst8|lpm_add_sub:Add1"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add0"
+Info: Instantiated megafunction "medicine:inst8|lpm_add_sub:Add0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add4"
+Info: Instantiated megafunction "medicine:inst8|lpm_add_sub:Add4" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "12"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add4|addcore:adder[1]", which is child of megafunction instantiation "medicine:inst8|lpm_add_sub:Add4"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add4|look_add:look_ahead_unit", which is child of megafunction instantiation "medicine:inst8|lpm_add_sub:Add4"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add4|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "medicine:inst8|lpm_add_sub:Add4"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add6"
+Info: Instantiated megafunction "medicine:inst8|lpm_add_sub:Add6" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "12"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "medicine:inst8|lpm_add_sub:Add5"
+Info: Instantiated megafunction "medicine:inst8|lpm_add_sub:Add5" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "12"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "divider:inst|lpm_add_sub:Add0"
+Info: Instantiated megafunction "divider:inst|lpm_add_sub:Add0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "14"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "divider:inst|lpm_add_sub:Add0|addcore:adder[1]", which is child of megafunction instantiation "divider:inst|lpm_add_sub:Add0"
+Info: Elaborated megafunction instantiation "divider:inst|lpm_add_sub:Add0|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "divider:inst|lpm_add_sub:Add0"
+Info: Ignored 70 buffer(s)
+    Info: Ignored 70 SOFT buffer(s)
+Info: Implemented 153 device resources after synthesis - the final resource count might be different
+    Info: Implemented 19 input pins
+    Info: Implemented 27 output pins
+    Info: Implemented 97 macrocells
+    Info: Implemented 10 shareable expanders
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 249 megabytes
+    Info: Processing ended: Thu Jun 09 13:37:27 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

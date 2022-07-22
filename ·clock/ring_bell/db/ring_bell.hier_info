@@ -1,0 +1,10 @@
+|ring_bell
+clk => temp[2].CLK
+clk => temp[1].CLK
+clk => temp[0].CLK
+clk => ring~reg0.CLK
+co1 => process_0~0.IN0
+co2 => process_0~0.IN1
+ring <= ring~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

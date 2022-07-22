@@ -1,0 +1,15 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jun  7 09:09:10 2022
+| Host         : DESKTOP-1PKIODA running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file clock_bus_skew_routed.rpt -pb clock_bus_skew_routed.pb -rpx clock_bus_skew_routed.rpx
+| Design       : clock
+| Device       : xa7a100t-fgg484
+| Speed File   : -1I  PRODUCTION 1.16 2018-06-13
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

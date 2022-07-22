@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="clock_vhd_tst2_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="clock_vhd_tst2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3580100500000000000fs"></ZoomStartTime>
+      <ZoomEndTime time="3671400500000000001fs"></ZoomEndTime>
+      <Cursor1Time time="3668000500000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="122"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/clock_vhd_tst2/i1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/qd" type="logic">
+      <obj_property name="ElementShortName">qd</obj_property>
+      <obj_property name="ObjectShortName">qd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/minuteset" type="array">
+      <obj_property name="ElementShortName">minuteset[7:0]</obj_property>
+      <obj_property name="ObjectShortName">minuteset[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/hourset" type="array">
+      <obj_property name="ElementShortName">hourset[7:0]</obj_property>
+      <obj_property name="ObjectShortName">hourset[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/d" type="array">
+      <obj_property name="ElementShortName">d[1:0]</obj_property>
+      <obj_property name="ObjectShortName">d[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/ring" type="logic">
+      <obj_property name="ElementShortName">ring</obj_property>
+      <obj_property name="ObjectShortName">ring</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/ledout1" type="array">
+      <obj_property name="ElementShortName">ledout1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ledout1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/enout" type="array">
+      <obj_property name="ElementShortName">enout[5:0]</obj_property>
+      <obj_property name="ObjectShortName">enout[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/s" type="array">
+      <obj_property name="ElementShortName">s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/pin" type="array">
+      <obj_property name="ElementShortName">pin[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pin[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/secondt0" type="array">
+      <obj_property name="ElementShortName">secondt0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">secondt0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/secondt1" type="array">
+      <obj_property name="ElementShortName">secondt1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">secondt1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/minutet0" type="array">
+      <obj_property name="ElementShortName">minutet0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">minutet0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/minutet1" type="array">
+      <obj_property name="ElementShortName">minutet1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">minutet1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/hourt0" type="array">
+      <obj_property name="ElementShortName">hourt0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hourt0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/hourt1" type="array">
+      <obj_property name="ElementShortName">hourt1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hourt1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/clock_vhd_tst2/i1/enouttemp" type="array">
+      <obj_property name="ElementShortName">enouttemp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">enouttemp[5:0]</obj_property>
+   </wvobject>
+</wave_config>

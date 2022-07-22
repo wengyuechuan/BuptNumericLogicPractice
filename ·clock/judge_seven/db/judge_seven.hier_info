@@ -1,0 +1,19 @@
+|judge_seven
+clk => count.CLK
+change => temp[6]~6.IN1
+pin[0] => temp[0]~0.DATAIN
+pin[1] => temp[1]~1.DATAIN
+pin[2] => temp[2]~2.DATAIN
+pin[3] => temp[3]~3.DATAIN
+pin[4] => temp[4]~4.DATAIN
+pin[5] => temp[5]~5.DATAIN
+pin[6] => temp[6]~7.DATAIN
+pout[0] <= temp[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+pout[1] <= temp[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+pout[2] <= temp[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+pout[3] <= temp[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+pout[4] <= temp[4]~4.DB_MAX_OUTPUT_PORT_TYPE
+pout[5] <= temp[5]~5.DB_MAX_OUTPUT_PORT_TYPE
+pout[6] <= temp[6]~7.DB_MAX_OUTPUT_PORT_TYPE
+
+

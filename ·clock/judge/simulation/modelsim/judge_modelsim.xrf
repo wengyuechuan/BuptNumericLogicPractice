@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, D:/学习用文档/数字逻辑课程设计/最终项目/project1/project/judge/judge.vwf
+source_file = 1, D:/学习用文档/数字逻辑课程设计/最终项目/project1/project/judge/judge.vhd
+source_file = 1, D:/学习用文档/数字逻辑课程设计/最终项目/project1/project/judge/db/judge.cbx.xml
+design_name = judge
+instance = comp, \clk~I\, clk, judge, 1
+instance = comp, \pin[0]~I\, pin[0], judge, 1
+instance = comp, \change~I\, change, judge, 1
+instance = comp, \count~0\, count~0, judge, 1
+instance = comp, \temp[3]~3\, temp[3]~3, judge, 1
+instance = comp, \pin[1]~I\, pin[1], judge, 1
+instance = comp, \pin[2]~I\, pin[2], judge, 1
+instance = comp, \pin[3]~I\, pin[3], judge, 1
+instance = comp, \pout[0]~I\, pout[0], judge, 1
+instance = comp, \pout[1]~I\, pout[1], judge, 1
+instance = comp, \pout[2]~I\, pout[2], judge, 1
+instance = comp, \pout[3]~I\, pout[3], judge, 1

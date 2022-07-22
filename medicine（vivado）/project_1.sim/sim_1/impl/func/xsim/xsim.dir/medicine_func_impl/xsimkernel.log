@@ -1,0 +1,7 @@
+Running: xsim.dir/medicine_func_impl/xsimk.exe -simmode gui -wdb medicine_func_impl.wdb -simrunnum 0 -socket 60526
+Design successfully loaded
+Design Loading Memory Usage: 7596 KB (Peak: 7596 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8816 KB (Peak: 8816 KB)
+Simulation CPU Usage: 15 ms

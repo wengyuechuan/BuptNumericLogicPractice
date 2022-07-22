@@ -1,0 +1,109 @@
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+# File: D:\Quartusll 9.0\quartus\medicine_lab\medicine.csv
+# Generated on: Thu Jun 09 13:42:07 2022
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,VREF Group,Group
+clk,Input,PIN_55,,
+cur_bot_first[7],Output,PIN_52,,cur_bot_first[7..0]
+cur_bot_first[6],Output,PIN_51,,cur_bot_first[7..0]
+cur_bot_first[5],Output,PIN_50,,cur_bot_first[7..0]
+cur_bot_first[4],Output,PIN_49,,cur_bot_first[7..0]
+cur_bot_first[3],Output,PIN_48,,cur_bot_first[7..0]
+cur_bot_first[2],Output,PIN_46,,cur_bot_first[7..0]
+cur_bot_first[1],Output,PIN_45,,cur_bot_first[7..0]
+cur_bot_first[0],Output,PIN_44,,cur_bot_first[7..0]
+cur_bot_second[3],Output,PIN_41,,cur_bot_second[3..0]
+cur_bot_second[2],Output,PIN_40,,cur_bot_second[3..0]
+cur_bot_second[1],Output,PIN_39,,cur_bot_second[3..0]
+cur_bot_second[0],Output,PIN_37,,cur_bot_second[3..0]
+cur_pill[11],Output,PIN_29,,cur_pill[11..0]
+cur_pill[10],Output,PIN_28,,cur_pill[11..0]
+cur_pill[9],Output,PIN_27,,cur_pill[11..0]
+cur_pill[8],Output,PIN_25,,cur_pill[11..0]
+cur_pill[7],Output,PIN_34,,cur_pill[11..0]
+cur_pill[6],Output,PIN_33,,cur_pill[11..0]
+cur_pill[5],Output,PIN_31,,cur_pill[11..0]
+cur_pill[4],Output,PIN_30,,cur_pill[11..0]
+cur_pill[3],Output,PIN_18,,cur_pill[11..0]
+cur_pill[2],Output,PIN_17,,cur_pill[11..0]
+cur_pill[1],Output,PIN_36,,cur_pill[11..0]
+cur_pill[0],Output,PIN_35,,cur_pill[11..0]
+enable,Input,PIN_60,,
+max_bottle[7],Input,PIN_74,,max_bottle[7..0]
+max_bottle[6],Input,PIN_75,,max_bottle[7..0]
+max_bottle[5],Input,PIN_76,,max_bottle[7..0]
+max_bottle[4],Input,PIN_77,,max_bottle[7..0]
+max_bottle[3],Input,PIN_79,,max_bottle[7..0]
+max_bottle[2],Input,PIN_80,,max_bottle[7..0]
+max_bottle[1],Input,PIN_81,,max_bottle[7..0]
+max_bottle[0],Input,PIN_54,,max_bottle[7..0]
+pnpb[7],Input,PIN_63,,pnpb[7..0]
+pnpb[6],Input,PIN_64,,pnpb[7..0]
+pnpb[5],Input,PIN_65,,pnpb[7..0]
+pnpb[4],Input,PIN_67,,pnpb[7..0]
+pnpb[3],Input,PIN_68,,pnpb[7..0]
+pnpb[2],Input,PIN_69,,pnpb[7..0]
+pnpb[1],Input,PIN_70,,pnpb[7..0]
+pnpb[0],Input,PIN_73,,pnpb[7..0]
+reset,Input,PIN_1,,
+stop_light,Output,PIN_20,,
+TCK,Input,,,
+TDI,Input,,,
+TDO,Output,,,
+TMS,Input,,,
+warn_light,Output,PIN_21,,
+work_light,Output,PIN_22,,
+,Unknown,PIN_2,,
+,Unknown,PIN_3,,
+,Unknown,PIN_4,,
+,Unknown,PIN_5,,
+,Unknown,PIN_6,,
+,Unknown,PIN_7,,
+,Unknown,PIN_8,,
+,Unknown,PIN_9,,
+,Unknown,PIN_10,,
+,Unknown,PIN_11,,
+,Unknown,PIN_12,,
+,Unknown,PIN_13,,
+,Unknown,PIN_14,,
+,Unknown,PIN_15,,
+,Unknown,PIN_16,,
+,Unknown,PIN_19,,
+,Unknown,PIN_23,,
+,Unknown,PIN_24,,
+,Unknown,PIN_26,,
+,Unknown,PIN_32,,
+,Unknown,PIN_38,,
+,Unknown,PIN_42,,
+,Unknown,PIN_43,,
+,Unknown,PIN_47,,
+,Unknown,PIN_53,,
+,Unknown,PIN_56,,
+,Unknown,PIN_57,,
+,Unknown,PIN_58,,
+,Unknown,PIN_59,,
+,Unknown,PIN_61,,
+,Unknown,PIN_62,,
+,Unknown,PIN_66,,
+,Unknown,PIN_71,,
+,Unknown,PIN_72,,
+,Unknown,PIN_78,,
+,Unknown,PIN_82,,
+,Unknown,PIN_83,,
+,Unknown,PIN_84,,

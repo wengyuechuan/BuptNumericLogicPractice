@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 56 264 192)
+	(text "total" (rect 5 8 26 20)(font "Arial" ))
+	(text "inst" (rect 8 120 25 132)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "clk" (rect 0 8 14 20)(font "Arial" ))
+		(text "clk" (rect 21 35 35 47)(font "Arial" ))
+		(line (pt 0 40)(pt 16 40)(line_width 1))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "enable" (rect 0 8 31 20)(font "Arial" ))
+		(text "enable" (rect 21 51 52 63)(font "Arial" ))
+		(line (pt 0 56)(pt 16 56)(line_width 1))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "reset" (rect 0 8 24 20)(font "Arial" ))
+		(text "reset" (rect 21 67 45 79)(font "Arial" ))
+		(line (pt 0 72)(pt 16 72)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "pnpb[7..0]" (rect 0 8 49 20)(font "Arial" ))
+		(text "pnpb[7..0]" (rect 21 83 70 95)(font "Arial" ))
+		(line (pt 0 88)(pt 16 88)(line_width 3))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "max_bottle[7..0]" (rect 0 8 80 20)(font "Arial" ))
+		(text "max_bottle[7..0]" (rect 21 99 101 111)(font "Arial" ))
+		(line (pt 0 104)(pt 16 104)(line_width 3))
+	)
+	(port
+		(pt 200 40)
+		(output)
+		(text "cur_bot[7..0]" (rect 0 8 62 20)(font "Arial" ))
+		(text "cur_bot[7..0]" (rect 117 35 179 47)(font "Arial" ))
+		(line (pt 200 40)(pt 184 40)(line_width 3))
+	)
+	(port
+		(pt 200 56)
+		(output)
+		(text "cur_pill[11..0]" (rect 0 8 66 20)(font "Arial" ))
+		(text "cur_pill[11..0]" (rect 113 51 179 63)(font "Arial" ))
+		(line (pt 200 56)(pt 184 56)(line_width 3))
+	)
+	(port
+		(pt 200 72)
+		(output)
+		(text "work_light" (rect 0 8 48 20)(font "Arial" ))
+		(text "work_light" (rect 131 67 179 79)(font "Arial" ))
+		(line (pt 200 72)(pt 184 72)(line_width 1))
+	)
+	(port
+		(pt 200 88)
+		(output)
+		(text "stop_light" (rect 0 8 47 20)(font "Arial" ))
+		(text "stop_light" (rect 132 83 179 95)(font "Arial" ))
+		(line (pt 200 88)(pt 184 88)(line_width 1))
+	)
+	(port
+		(pt 200 104)
+		(output)
+		(text "warn_light" (rect 0 8 48 20)(font "Arial" ))
+		(text "warn_light" (rect 131 99 179 111)(font "Arial" ))
+		(line (pt 200 104)(pt 184 104)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 24 184 120)(line_width 1))
+	)
+)
