@@ -1,0 +1,6 @@
+# BuptNumericLogicPractice
+BUPT数字逻辑课程设计
+这里包括了使用Quartuii版本和vivado的版本
+如果使用肯定是不建议大家抄，因为我们写的也不算是太好
+我们使用的VHDL，希望大家使用Verilog吧，学习起来可能更简单，而且更好使用一些，
+祝学弟学妹们学业有成
